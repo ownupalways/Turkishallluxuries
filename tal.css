@@ -234,7 +234,7 @@ div.stepdown .drop{
     overflow-y: hidden;
     white-space: nowrap;
     z-index: -1;
-    margin-top: 290px;
+    margin: 5px -10px;
 }
 
 #card{
