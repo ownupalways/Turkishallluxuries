@@ -238,8 +238,10 @@ div.stepdown .drop{
 
 /*Scrolling Image on Homepage*/
 .container{
-    margin-top: 0;
-    top: 0;
+    position:absolute;
+    width: 100%;
+    z-index: -1;
+    top:80px;
 }
 #Scroll-container{
     display: flex;
