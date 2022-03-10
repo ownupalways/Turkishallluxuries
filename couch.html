@@ -2,165 +2,275 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="viewport" window.top="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
         <link rel="stylesheet" href="tal.css">
-        <script src="tal.js"></script>
+        <script src="tal.js" defer></script>
         <title>Turkish All Luxuries</title>
     </head>
-        <div id="View" class="menubar">
-            <a href="index.html" class="active">Home</a>
-            <div class="menulist-drops">
-                <a class="listtab menu">Services</a>
-                <div class="list">
-                    <div class="stepdown">
-                        <a class="drop">All Interiors</a>
-                        <div class="driping">
-                            <a href="couch.html" class="drip driptop">Exotic Couch</a>
-                            <a href="Dinning.html" class="drip">Exotic Dinning</a>
-                            <a href="shoe.html" class="drip">Royal Beds</a>
-                            <a href="Bags.html" class="drip">Smart Living Room</a>
-                        </div>
-                    </div>
-                    <div class="stepdown">
-                        <a class="drop">Fashions</a>
-                        <div class="driping">
-                            <a href="footware.html" class="drip driptop">Footwares</a>
-                            <a href="bags.html" class="drip">Ladies Bags</a>
-                            <a href="cloth.html" class="drip">Royal Cloth</a>
-                            <a href="Bags.html" class="drip">Cosmetic</a>
-                        </div>
-                    </div>
-                    <div class="stepdown">
-                        <a href="All-Turkish.html" class="drop">All-Turkish</a>
-                    </div>
-                </div>
+    <body class="background">
+        <header class="header">
+            <a href="#" class="logo"> <i class="fas fa-shopping-trail">Parking</i></a>
+            <nav class="navbar">
+                <a href="index.html">Home</a>
+                <a href="couch.html">Couch</a>
+                <a href="service.html">Services</a>
+                <a href="categories.html">categories</a>
+                <a href="reviews.html">reviews</a>
+                <a href="about.html">About</a>
+                <a href="blog.html">blogs</a>
+            </nav>
+
+            <div class="icon">
+                <div class="fas fa-bars" id="menu-btn"></div>
+                <div class="fas fa-search" id="search-btn"></div>
+                <div class="fas fa-shopping-cart" id="cart-btn"></div>
+                <div class="fas fa-user" id="user-btn"></div>
             </div>
-            <a href="contact.html" class="menulist">Contact</a>
-            <a href="about.html" class="menulist About">About</a>
-            <a href="javascript:void(0);" style="font-size: 25px;" class="icon" onclick="adjust()">Menu<span></span>&#9776;</a>
-            <form>
-                <input type="text" placeholder="Search...">
+
+            <form action="" class="search-form">
+                <input type="search" id="search-box" placeholder="search item here...">
+                <label for="search-box" class="fas fa-search"></label>
             </form>
-        </div>
-        <br><br><br>
-        <div class="container">
-             <div id="Scroll-container">
-                <div id="card"><img src="talimage/single couch3.jpg" class="imagesetting">
-                    <p class="clear">Single Couch Cream</p>
+
+            <div class="cart-container container-section">
+                <div class="cart-rows">
+                    <span class="cart-item cart-header cart-column item-first">ITEM</span>
+                    <span class="cart-item cart-header cart-column item-second">PRICE</span>
+                    <span class="cart-item cart-header cart-column item-third">QUANTITY</span>
                 </div>
-                <div id="card"><img src="talimage/single couch.jpg" class="imagesetting">
-                    <p class="clear">Single Couch Grey</p>
+                <div class="cart-items">
                 </div>
-                <div id="card"><img src="talimage/single couch2.jpg" class="imagesetting">
-                    <p class="clear">Single Couch Ash</p>
+                <div class="cart-total">
+                    <strong class="cart-total-title">Total: </strong>
+                    <span class="cart-total-price">$0</span>
                 </div>
-                <div id="card"><img src="talimage/singleblack.jpg" class="imagesetting">
-                    <p class="clear">Single Couch Black</p>
-                </div>
-                <div id="card"><img src="talimage/singlesimple.jpg" class="imagesetting">
-                    <p class="clear">Single Couch Ash</p>
-                </div>
-                <div id="card"><img src="talimage/threeclean.jpg" class="imagesetting">
-                    <p class="clear">Single Couch Three-Seater</p>
-                </div>
-                <div id="card"><img src="talimage/threeseat.jpg" class="imagesetting">
-                    <p class="clear">Single Couch</p>
-                </div>
-                <div id="card"><img src="talimage/threeseatbrown.jpg" class="imagesetting">
-                    <p class="clear">Single Couch</p>
-                </div>
-                <div id="card"><img src="talimage/threeseater.jpg" class="imagesetting">
-                    <p class="clear">Single Couch</p>
-                </div>
-                <div id="card"><img src="talimage/x-bed3.jpg" class="imagesetting">
-                    <p class="clear">Single Couch</p>
-                </div>
-                <div id="card"><img src="talimage/x-bed1.jpeg" class="imagesetting">
-                    <p class="clear">Single Couch</p>
-                </div>
-                <div id="card"><img src="talimage/x-bed.jpg" class="imagesetting">
-                    <p class="clear">Single Couch</p>
-                </div>
-                <div id="card"><img src="talimage/livingroom.jpeg" class="imagesetting">
-                    <p class="clear">Single Couch</p>
-                </div>
-                <div id="card"><img src="talimage/livingroomlarge.jpg" class="imagesetting">
-                    <p class="clear">Single Couch</p>
-                </div>
-                <div id="card"><img src="talimage/dinninggreen.jpg" class="imagesetting">
-                    <p class="clear">Single Couch</p>
-                </div>
-                <div id="card"><img src="talimage/dinninglove.jpeg" class="imagesetting">
-                    <p class="clear">Single Couch</p>
+                <div class="purchase">
+                    <button class="btn btn-purchase"  type="button">PURCHASE</button>
                 </div>
             </div>
-            <div id="Scroll-container">
-                <div id="card"><img src="talimage/single couch3.jpg" class="imagesetting">
-                    <p class="clear">Single Couch Cream</p>
-                </div>
-                <div id="card"><img src="talimage/single couch.jpg" class="imagesetting">
-                    <p class="clear">Single Couch Grey</p>
-                </div>
-                <div id="card"><img src="talimage/single couch2.jpg" class="imagesetting">
-                    <p class="clear">Single Couch Ash</p>
-                </div>
-                <div id="card"><img src="talimage/singleblack.jpg" class="imagesetting">
-                    <p class="clear">Single Couch Black</p>
-                </div>
-                <div id="card"><img src="talimage/singlesimple.jpg" class="imagesetting">
-                    <p class="clear">Single Couch Ash</p>
-                </div>
-                <div id="card"><img src="talimage/threeclean.jpg" class="imagesetting">
-                    <p class="clear">Single Couch Three-Seater</p>
-                </div>
-                <div id="card"><img src="talimage/threeseat.jpg" class="imagesetting">
-                    <p class="clear">Single Couch</p>
-                </div>
-                <div id="card"><img src="talimage/threeseatbrown.jpg" class="imagesetting">
-                    <p class="clear">Single Couch</p>
-                </div>
-                <div id="card"><img src="talimage/threeseater.jpg" class="imagesetting">
-                    <p class="clear">Single Couch</p>
-                </div>
-                <div id="card"><img src="talimage/x-bed3.jpg" class="imagesetting">
-                    <p class="clear">Single Couch</p>
-                </div>
-                <div id="card"><img src="talimage/x-bed1.jpeg" class="imagesetting">
-                    <p class="clear">Single Couch</p>
-                </div>
-                <div id="card"><img src="talimage/x-bed.jpg" class="imagesetting">
-                    <p class="clear">Single Couch</p>
-                </div>
-                <div id="card"><img src="talimage/livingroom.jpeg" class="imagesetting">
-                    <p class="clear">Single Couch</p>
-                </div>
-                <div id="card"><img src="talimage/livingroomlarge.jpg" class="imagesetting">
-                    <p class="clear">Single Couch</p>
-                </div>
-                <div id="card"><img src="talimage/dinninggreen.jpg" class="imagesetting">
-                    <p class="clear">Single Couch</p>
-                </div>
-                <div id="card"><img src="talimage/dinninglove.jpeg" class="imagesetting">
-                    <p class="clear">Single Couch</p>
+
+            <form action="" class="login">
+                <h3>Login Now</h3>
+                <input type="email"placeholder ="Email" class="input-data">
+                <input type="password" placeholder = "Password" class="input-data">
+                <input type="submit" value="Login Now" class="btn">
+                <p>Forget Password? <a href="#">Click here</a></p>
+                <p>Don't have an account? <a href="#">Create Account</a></p>
+            </form>
+        </header>
+
+        <div class="Scroll-container">
+            <div id="card">
+                <img class="image-setting  shop-image" src="talimage/single couch.jpg">
+                <p class="clear">Dark leather Couch </p>
+                <span class="price"> $1000</span>
+                <div class="btn-host">
+                    <button class="buy-btn btn" onclick="myLogin()">Buy Now</button>
+                    <button class="cart-btn btn" onclick="myLogin()">Add to Cart</button>
                 </div>
             </div>
-            <div id="Scroll-container">
-                <div id="card"><img src="talimage/x-bed.jpg" class="imagesetting">
-                    <p class="clear">Exotic Bed</p>
+            <div id="card">
+                <img class="image-setting  shop-image" src="talimage/single couch2.jpg">
+                <p class="clear">Dark Ex-Couch</p>
+                <p class="price"> $1000</p>
+                <div class="btn-host">
+                    <button class="buy-btn btn" onclick="myLogin()">Buy Now</button>
+                    <button class="cart-btn btn" onclick="myLogin()">Add to Cart</button>
                 </div>
-                <div id="card"><img src="talimage/x-bed.jpg" class="imagesetting">
-                    <p class="clear">Exotic Bed</p>
+            </div>
+            <div id="card">
+                <img src="talimage/threeclean.jpg" class="image-setting  shop-image">
+                <p class="clear">Three-Seater Sky</p>
+                <p class="price"> $1000</p>
+                <div class="btn-host">
+                    <button class="buy-btn btn" onclick="myLogin()">Buy Now</button> 
+                    <button class="cart-btn btn" onclick="myLogin()">Add to Cart</button>
                 </div>
-                <div id="card"><img src="talimage/x-bed2.jpg" class="imagesetting">
-                    <p class="clear">Exotic Bed</p>
+            </div>
+            <div id="card"><img src="talimage/threeseat.jpg" class="image-setting  shop-image">
+                <p class="clear">Three Seater blue</p>
+                <p class="price"> $1000</p>
+                <div class="btn-host">
+                    <button class="buy-btn btn" onclick="myLogin()">Buy Now</button> 
+                    <button class="cart-btn btn" onclick="myLogin()">Add to Cart</button>
                 </div>
-                <div id="card"><img src="talimage/x-bed3.jpg" class="imagesetting">
-                    <p class="clear">Exotic Bed</p>
+            </div>
+            <div id="card"><img src="talimage/threeseatbrown.jpg" class="image-setting  shop-image">
+                <p class="clear">three seater chocolate</p>
+                <p class="price"> $1000</p>
+                <div class="btn-host">
+                    <button class="buy-btn btn" onclick="myLogin()">Buy Now</button> 
+                    <button class="cart-btn btn" onclick="myLogin()">Add to Cart</button>
                 </div>
-                <div id="card"><img src="talimage/x-bed4.jpg" class="imagesetting">
-                    <p class="clear">Exotic Bed</p>
+            </div>
+            <div id="card">
+                <img src="talimage/dinninglove.jpeg" class="image-setting  shop-image">
+                <p class="clear">Ex-Dinning</p>
+                <p class="price"> $1000</p>
+                <div class="btn-host">
+                    <button class="buy-btn btn" onclick="myLogin()">Buy Now</button> 
+                    <button class="cart-btn btn" onclick="myLogin()">Add to Cart</button>
+                </div>
+            </div>
+            <div id="card">
+                <img src="talimage/x-bed.jpg" class="image-setting  shop-image">
+                <p class="clear">Ash ex-bed</p>
+                <p class="price"> $1000</p>
+                <div class="btn-host">
+                    <button class="buy-btn btn" onclick="myLogin()">Buy Now</button> 
+                    <button class="cart-btn btn" onclick="myLogin()">Add to Cart</button>
+                </div>
+            </div>
+            <div id="card">
+                <img src="talimage/x-bed3.jpg" class="image-setting  shop-image">
+                <p class="clear">ex-bed II</p>
+                <p class="price"> $1000</p>
+                <div class="btn-host">
+                    <button class="buy-btn btn" onclick="myLogin()">Buy Now</button> 
+                    <button class="cart-btn btn" onclick="myLogin()">Add to Cart</button>
+                </div>
+            </div>
+            <div id="card">
+                <img src="talimage/x-bed1.jpeg" class="image-setting  shop-image">
+                <p class="clear">Single Couch</p>
+                <p class="price"> $1000</p>
+                <div class="btn-host">
+                    <button class="buy-btn btn" onclick="myLogin()">Buy Now</button> 
+                    <button class="cart-btn btn" onclick="myLogin()">Add to Cart</button>
+                </div>
+            </div>
+            <div id="card"><img src="talimage/livingroom.jpeg" class="image-setting  shop-image">
+                <p class="clear">Single Couch</p>
+                <p class="price"> $1000</p>
+                <div class="btn-host">
+                    <button class="buy-btn btn" onclick="myLogin()">Buy Now</button> 
+                    <button class="cart-btn btn" onclick="myLogin()">Add to Cart</button>
+                </div>
+            </div>
+            <div id="card"><img src="talimage/livingroomlarge.jpg" class="image-setting  shop-image">
+                <p class="clear">Single Couch</p>
+                <p class="price"> $1000</p>
+                <div class="btn-host">
+                    <button class="buy-btn btn" onclick="myLogin()">Buy Now</button> 
+                    <button class="cart-btn btn" onclick="myLogin()">Add to Cart</button>
+                </div>
+            </div>
+            <div id="card"><img src="talimage/dinninggreen.jpg" class="image-setting  shop-image">
+                <p class="clear">Single Couch</p>
+                <p class="price"> $1000</p>
+                <div class="btn-host">
+                    <button class="buy-btn btn" onclick="myLogin()">Buy Now</button> 
+                    <button class="cart-btn btn" onclick="myLogin()">Add to Cart</button>
+                </div>
+            </div>
+            <div id="card"><img src="talimage/dinninglove.jpeg" class="image-setting  shop-image">
+                <p class="clear">Single Couch</p>
+                <p class="price"> $1000</p>
+                <div class="btn-host">
+                    <button class="buy-btn btn" onclick="myLogin()">Buy Now</button> 
+                    <button class="cart-btn btn" onclick="myLogin()">Add to Cart</button>
+                </div>
+            </div>
+            <div id="card" ><img src="talimage/single couch3.jpg" class="image-setting  shop-image">
+                <p class="clear">Single Couch Cream</p>
+                <p class="price"> $1000</p>
+                <div class="btn-host">
+                    <button class="buy-btn btn" onclick="myLogin()">Buy Now</button> 
+                    <button class="cart-btn btn" onclick="myLogin()">Add to Cart</button>
+                </div>
+            </div>
+            <div id="card"><img src="talimage/singleblack.jpg" class="image-setting  shop-image">
+                <p class="clear">Single Couch Black</p>
+                <p class="price"> $1000</p>
+                <div class="btn-host">
+                    <button class="buy-btn btn" onclick="myLogin()">Buy Now</button> 
+                    <button class="cart-btn btn" onclick="myLogin()">Add to Cart</button>
+                </div>
+            </div>
+            <div id="card"><img src="talimage/singlesimple.jpg" class="image-setting  shop-image">
+                <p class="clear">Single Couch Ash</p>
+                <p class="price"> $1000</p>
+                <div class="btn-host">
+                    <button class="buy-btn btn" onclick="myLogin()">Buy Now</button> 
+                    <button class="cart-btn btn" onclick="myLogin()">Add to Cart</button>
+                </div>
+            </div>
+            <div id="card"><img src="talimage/threeclean.jpg" class="image-setting  shop-image">
+                <p class="clear">Three-Seater</p>
+                <p class="price"> $1000</p>
+                <div class="btn-host">
+                    <button class="buy-btn btn" onclick="myLogin()">Buy Now</button> 
+                    <button class="cart-btn btn" onclick="myLogin()">Add to Cart</button>
+                </div>
+            </div>
+            <div id="card"><img src="talimage/threeseat.jpg" class="image-setting  shop-image">
+                <p class="clear">Single Couch</p>
+                <p class="price"> $1000</p>
+                <div class="btn-host">
+                    <button class="buy-btn btn" onclick="myLogin()">Buy Now</button> 
+                    <button class="cart-btn btn" onclick="myLogin()">Add to Cart</button>
+                </div>
+            </div>
+            <div id="card"><img src="talimage/threeseater.jpg" class="image-setting  shop-image">
+                <p class="clear">Single Couch</p>
+                <p class="price"> $1000</p>
+                <div class="btn-host">
+                    <button class="buy-btn btn" onclick="myLogin()">Buy Now</button> 
+                    <button class="cart-btn btn" onclick="myLogin()">Add to Cart</button>
+                </div>
+            </div>
+            <div id="card">
+                <img src="talimage/x-bed3.jpg" class="image-setting  shop-image">
+                <p class="clear">Single Couch</p>
+                <p class="price"> $1000</p>
+                <div class="btn-host">
+                    <button class="buy-btn btn" onclick="myLogin()">Buy Now</button> 
+                    <button class="cart-btn btn" onclick="myLogin()">Add to Cart</button>
+                </div>
+            </div>
+            <div id="card"><img src="talimage/x-bed1.jpeg" class="image-setting  shop-image">
+                <p class="clear">Single Couch</p>
+                <p class="price"> $1000</p>
+                <div class="btn-host">
+                    <button class="buy-btn btn" onclick="myLogin()">Buy Now</button> 
+                    <button class="cart-btn btn" onclick="myLogin()">Add to Cart</button>
+                </div>
+            </div>
+            <div id="card"><img src="talimage/x-bed.jpg" class="image-setting  shop-image">
+                <p class="clear">Single Couch</p>
+                <p class="price"> $1000</p>
+                <div class="btn-host">
+                    <button class="buy-btn btn" onclick="myLogin()">Buy Now</button> 
+                    <button class="cart-btn btn" onclick="myLogin()">Add to Cart</button>
+                </div>
+            </div>
+            <div id="card">
+                <img src="talimage/livingroom.jpeg" class="image-setting  shop-image">
+                <p class="clear">Single Couch</p>
+                <p class="price"> $1000</p>
+                <div class="btn-host">
+                    <button class="buy-btn btn" onclick="myLogin()">Buy Now</button> 
+                    <button class="cart-btn btn" onclick="myLogin()">Add to Cart</button>
+                </div>
+            </div>
+            <div id="card">
+                <img src="talimage/livingroomlarge.jpg" class="image-setting  shop-image">
+                <p class="clear">Single Couch</p>
+                <p class="price"> $1000</p>
+                <div class="btn-host">
+                    <button class="buy-btn btn" onclick="myLogin()">Buy Now</button> 
+                    <button class="cart-btn btn" onclick="myLogin()">Add to Cart</button>
+                </div>
+            </div>
+            <div id="card">
+                <img src="talimage/dinninggreen.jpg" class="image-setting  shop-image">
+                <p class="clear">Single Couch</p>
+                <p class="price"> $1000</p>
+                <div class="btn-host">
+                    <button class="buy-btn btn" onclick="myLogin()">Buy Now</button> 
+                    <button class="cart-btn btn" onclick="myLogin()">Add to Cart</button>
                 </div>
             </div>
         </div>

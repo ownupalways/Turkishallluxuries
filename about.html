@@ -1,51 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="tal.css">
-    <script src="tal.js"></script>
-    <title>Turkish All Luxuries</title>
-</head>
-<body>
-    <div id="View" class="menubar">
-        <a href="index.html" class="active">Home</a>
-        <div class="menulist-drops">
-            <a class="listtab menu">Services</a>
-            <div class="list">
-                <div class="stepdown">
-                    <a class="drop">All Interiors</a>
-                    <div class="driping">
-                        <a href="couch.html" class="drip driptop">Exotic Couch</a>
-                        <a href="Dinning.html" class="drip">Exotic Dinning</a>
-                        <a href="shoe.html" class="drip">Royal Beds</a>
-                        <a href="Bags.html" class="drip">Smart Living Room</a>
-                    </div>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" window.top="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+        <link rel="stylesheet" href="tal.css">
+        <script src="tal.js" defer></script>
+        <title>Turkish All Luxuries</title>
+    </head>
+    <body class="body-things">
+        <header class="header">
+            <a href="#" class="logo"> <i class="fas fa-shopping-trail">Parking</i></a>
+            <nav class="navbar">
+                <a href="index.html">Home</a>
+                <a href="couch.html">Couch</a>
+                <a href="service.html">Services</a>
+                <a href="categories.html">categories</a>
+                <a href="reviews.html">reviews</a>
+                <a href="about.html">About</a>
+                <a href="blog.html">blogs</a>
+            </nav>
+
+            <div class="icon">
+                <div class="fas fa-bars" id="menu-btn"></div>
+                <div class="fas fa-search" id="search-btn"></div>
+                <div class="fas fa-shopping-cart" id="cart-btn"></div>
+                <div class="fas fa-user" id="user-btn"></div>
+            </div>
+
+            <form action="" class="search-form">
+                <input type="search" id="search-box" placeholder="search item here...">
+                <label for="search-box" class="fas fa-search"></label>
+            </form>
+
+            <div class="cart-container container-section">
+                <div class="cart-rows">
+                    <span class="cart-item cart-header cart-column">ITEM</span>
+                    <span class="cart-item cart-header cart-column price">PRICE</span>
+                    <span class="cart-item cart-header cart-column">QUANTITY</span>
                 </div>
-                <div class="stepdown">
-                    <a class="drop">Fashions</a>
-                    <div class="driping">
-                        <a href="footware.html" class="drip driptop">Footwares</a>
-                        <a href="bags.html" class="drip">Ladies Bags</a>
-                        <a href="cloth.html" class="drip">Royal Cloth</a>
-                        <a href="Bags.html" class="drip">Cosmetic</a>
-                    </div>
+                <div class="cart-items">
                 </div>
-                <div class="stepdown">
-                    <a href="All-Turkish.html" class="drop">All-Turkish</a>
+                <div class="cart-total">
+                    <strong class="cart-total-title">Total: </strong>
+                    <span class="cart-total-price">$0</span>
+                </div>
+                <div class="purchase">
+                    <button class="btn btn-purchase"  type="button">PURCHASE</button>
                 </div>
             </div>
-        </div>
-        <a href="contact.html" class="menulist">Contact</a>
-        <a href="about.html" class="menulist About">About</a>
-        <a href="javascript:void(0);" style="font-size: 25px;" class="icon" onclick="adjust()">Menu<span></span>&#9776;</a>
-        <form>
-            <input type="text" placeholder="Search...">
-        </form>
-    </div>
-    <br><br><br>
+
+
+            <form action="" class="login">
+                <h3>Login Now</h3>
+                <input type="email"placeholder ="Email" class="input-data">
+                <input type="password" placeholder = "Password" class="input-data">
+                <input type="submit" value="Login Now" class="btn">
+                <p>Forget Password? <a href="#">Click here</a></p>
+                <p>Don't have an account? <a href="#">Create Account</a></p>
+            </form>
+        </header>
     <div class="row">
         <div class="column side"></div>
         <div class="column middle">
