@@ -86,6 +86,7 @@ html{
     color: var(--white);
     cursor: pointer;
 }
+
 #menu-btn{
     display: none;
 }
@@ -464,12 +465,18 @@ html{
     .welcome-card{
         margin-top: 100px;
     }
+
+
+    .header .navbar a{
+        margin: 2rem 2.5rem;
+        display: block;
+    }
     #menu-btn{
         display: inline-block;
     }
-    .Scroll-container{
-        margin-top:18%;
-    }
+    /*.Scroll-container{
+        margin-top:10%;
+    }*/
 
     .header .search-form{
         width: 90%;
@@ -504,17 +511,11 @@ html{
         margin: 2rem 2.5rem;
         display: block;
     }
-    .welcome-card{
-        margin-top: 40rem;
-    }
 }
 
 @media (max-width: 450px) {
     html{
         font-size: 50%;
-    }
-    .welcome-card{
-        margin-top: 40rem;
     }
     .header .cart-container .cart-rows .cart-header{
        font-size: 10px;
@@ -579,24 +580,15 @@ html{
     }
 }
 
-@media (max-width: 300px) {
-    html{
-        font-size: 25%;
-    }
-    
-}
 /*Card responsive display on small device*/
-@media (max-width:450px) {
-    .Scroll-container{
-        display: flex;
-        flex-wrap: wrap; 
-        margin-top: 18%;
-    }
-    .Scroll-container #card{
+@media (max-width:700px) {
+    
+    .Scroll-container #card {
         margin: 10px;
         height:auto;
         width: 100%;
     }
+
     .Scroll-container > #card > .shop-image{
         width: 100%;
         height: auto;
@@ -614,7 +606,7 @@ html{
 }
 
 /*Home page welcome text */
-@media screen and (max-width:700px){
+/*@media screen and (max-width:700px){
     .welcome-card{
         width: 300px;
         height: auto;
@@ -623,7 +615,7 @@ html{
         font-size: 16px;
         color: white;
     }
-}
+}*/
 
 /*About page*/
 .about-site{
