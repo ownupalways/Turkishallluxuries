@@ -54,11 +54,29 @@ html{
     font-weight: bolder;
 } 
 
-.header .navbar a{
+.navbar {
+    display: flex;
+}
+
+.navbar .view {
+    margin: 0 5rem;
+    font-size: 1.7rem;
+    color: var(--white);
+    font-weight: bold;
+} 
+.header .navbar .drip{
     font-size: 1.7rem;
     margin:0 1rem;
     color: var(--white);
     font-weight: bold;
+}
+
+.list {
+    display: none;
+}
+
+.listTab:hover .list {
+    display: block;
 }
 
 .header .navbar a:hover{
@@ -141,6 +159,7 @@ html{
 .header .search-form label:hover{
     cursor: pointer;
 }
+
 
 /*..................CART PAGE STYLING.................*/
 /* .header .cart-container{
@@ -426,7 +445,7 @@ html{
 
 .Scroll-container #card .image-setting {
     border-radius: 8px 8px 0 0;
-    height: 200px;
+    /* height: 200px; */
     -webkit-border-radius: 8px 8px 0 0;
     -moz-border-radius: 8px 8px 0 0;
     -ms-border-radius: 8px 8px 0 0;
@@ -442,30 +461,6 @@ html{
     margin: 32px 8px auto;
     bottom: 0;
     padding-bottom: 10px;
-}
-.btn-host .buy-btn{
-    padding: 10px;
-}
-.btn-host .cart-btn{
-    padding:10px;
-}
-.btn{
-    font-weight: bold;
-    border: none;
-    border-radius: 5px;
-    -webkit-border-radius: 5px;
-    -ms-border-radius: 5px;
-    -o-border-radius: 5px;
-}
-.btn:hover{
-    transition: .4s ease-out;
-    background-color: var(--general_btn);
-    color: #fff;
-    box-shadow: 0 2px 2px rgb(173, 172, 172) ;
-    -webkit-transition: .4s ease-out;
-    -moz-transition: .4s ease-out;
-    -ms-transition: .4s ease-out;
-    -o-transition: .4s ease-out;
 }
 
 /*responsiveness for header items*/
@@ -499,7 +494,7 @@ html{
     #menu-btn{
         display: block;
     }
-    
+
     .header .navbar a{
         margin: 2rem 2.5rem;
         display: block;
