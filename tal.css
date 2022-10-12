@@ -376,7 +376,6 @@ html{
 .Scroll-container{
     display: flex;
     flex-wrap: wrap;
-    margin: 10px auto;
     justify-content: center;
     align-items: center;
 }
@@ -384,7 +383,7 @@ html{
 #card{
     position: relative;
     overflow: hidden;
-    margin:20px;
+    margin:0 20px 25px 20px;
     width: min(700px, 90%, 220px);
     height: max(300px, 90%, 40vh);
     border-radius: 8px 8px 6px 6px;
@@ -445,7 +444,7 @@ html{
 
 .Scroll-container #card .image-setting {
     border-radius: 8px 8px 0 0;
-    /* height: 200px; */
+    height: 200px;
     -webkit-border-radius: 8px 8px 0 0;
     -moz-border-radius: 8px 8px 0 0;
     -ms-border-radius: 8px 8px 0 0;
@@ -462,7 +461,20 @@ html{
     bottom: 0;
     padding-bottom: 10px;
 }
+/* Index page Layout */
+.main {
+    width: 80%;
+}
 
+.sideOff {
+    width: 20%;
+    border: 2px blue solid;
+}
+
+.rowOff {
+    display: flex;
+    margin: 10px;
+}
 /*responsiveness for header items*/
 @media (max-width: 991px) {
     html{
