@@ -21,6 +21,7 @@
     --background:rgba(219, 170, 170, 0.6);
     --background_page: rgb(122, 112, 123);
     --general_btn:rgb(88, 20, 88);
+    --overCard:rgba(7, 6, 6, 0.5);
 }
 
 html{
@@ -366,7 +367,7 @@ html{
     align-items: center;
 }
 
-.Scroll-container #card{
+#card{
     margin:20px;
     width: min(700px, 90%, 220px);
     height: max(300px, 90%, 40vh);
@@ -381,14 +382,42 @@ html{
 .Scroll-container #card .shop-image{
     width: 100%;
 }
-.Scroll-container #card .clear{
+
+/***************Home page image Info****************/
+.image-setting > .infoCard {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+}
+
+.Scroll-container .info {
+    position:absolute;
+    bottom:0;
+    left: -100%;
+    width:100%;
+    height: 100%;
+    display: grid;
+    align-items: flex-end;
+    background-color:var(--overCard);
+    transition: .8s;
+    -webkit-transition: .8s;
+    -moz-transition: .8s;
+    -ms-transition: .8s;
+    -o-transition: .8s;
+}
+
+#card:hover .info {
+    left:0;
+}
+/* .Scroll-container #card .clear{
     float: left;
     margin: 5px 5px 5px 8px;
     font-size: 15px;
     color: var(--black);
     font-weight: bolder;
     padding-bottom: 5px;
-}
+} */
 .Scroll-container #card .price{
     float: right;
     margin: 5px 8px 5px 5px;
@@ -646,10 +675,10 @@ html{
 .middle {
     width: 60%;
 }
-.shop-image{
+/* .shop-image{
     border-top-left-radius:10px;
     border-top-right-radius: 10px;
-}
+} */
 .person{
     display:inline-block;
 }
