@@ -17,7 +17,7 @@
     --onion: purple;
     --blue:rgb(33, 0, 221);
     --black:black;
-    --box-shadow: 6px 6px 8px rgb(8, 4, 4);
+    --box-shadow: 6px 2px 8px rgb(8, 4, 4);
     --background:rgba(219, 170, 170, 0.6);
     --background_page: rgb(122, 112, 123);
     --general_btn:rgb(88, 20, 88);
@@ -29,18 +29,18 @@ html{
     scroll-behavior: smooth;
     scroll-padding-top: 7rem;
 }
-.body-things{
+/* .body-things{
     background-image: url(talimage/x-bed1.jpeg);
     background-size:cover;
     background-position: center;
     height: 1000px;
-}
+} */
 .background{
     background:rgba(7, 3, 3, 0.808);
 }
 .header{
     width: 100%;
-    z-index: 1000;
+    height: 35vh;
     display: flex;
     justify-content:space-around;
     align-items: center;
