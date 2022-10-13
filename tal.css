@@ -513,15 +513,28 @@ html{
 }
 
 .bestPrice {
-    padding-top: 80px;
+    margin: 15px 10px;
+    padding:15px;
     flex-basis: 300px;
+    width: 100%;
+    line-height: 1.5;
+    font-size: 15px;
+    border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -ms-border-radius: 6px;
+    -o-border-radius: 6px;
+}
+.bestPrice:hover {
+    box-shadow: 1.5px 1.5px 4px 1.5px rgb(212, 212, 212);
 }
 .footer {
     flex-basis: 500px;
+    width: 100%;
 }
 .copyright {
     font-size: 15px;
-    background-color: blue;
+    width: 100%;
 }
 
 .cont {
