@@ -448,14 +448,28 @@ html{
 #card:hover .info {
     left:0;
 }
-/* .Scroll-container #card .clear{
+
+.info i {
+    font-size: 15px;
+    padding-left: 92%;
+    padding-top: 35px;
+    animation:moveOn 5s infinite;
+    -webkit-animation:moveOn 1s infinite;
+}
+
+@keyframes moveOn {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+.Scroll-container #card .clear{
     float: left;
     margin: 5px 5px 5px 8px;
     font-size: 15px;
     color: var(--black);
     font-weight: bolder;
     padding-bottom: 5px;
-} */
+}
 .Scroll-container #card .price{
     float: right;
     margin: 5px 8px 5px 5px;
@@ -490,8 +504,33 @@ html{
 }
 
 .sideOff {
+    display: flex;
+    flex-direction: column;
     width: 20%;
-   
+    margin-bottom: 20px;
+    padding-left: 30px;
+    align-items: flex-end;
+}
+
+.bestPrice {
+    padding-top: 80px;
+    flex-basis: 300px;
+}
+.footer {
+    flex-basis: 500px;
+}
+.copyright {
+    font-size: 15px;
+    background-color: blue;
+}
+
+.cont {
+    margin: 10px 0;
+    font-size: 18px;
+}
+
+.cont i {
+    margin-right: 14px;
 }
 
 .rowOff {

@@ -155,5 +155,14 @@ window.onscroll = () => {
     loginForm.classList.remove('active');
 }
 
-
+let arrowMove = document.getElementsByClassName('arrowMove')
+let info = document.getElementsByClassName('info')
+function movement() {
+    console.log(info)
+    if (info.style.left == "!00%") {
+        arrowMove.style.display= "none"
+    }else {
+        arrowMove.style.display= "inLine"
+    }
+}
 
