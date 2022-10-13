@@ -500,24 +500,24 @@ html{
 }
 /* Index page Layout */
 .main {
-    width: 80%;
+    flex: 80%;
 }
 
 .sideOff {
     display: flex;
     flex-direction: column;
-    width: 20%;
+    flex: 20%;
     margin-bottom: 20px;
-    padding-left: 30px;
+    padding: 20px;
     align-items: flex-end;
 }
 
 .bestPrice {
     margin: 15px 10px;
     padding:15px;
-    flex-basis: 300px;
+    flex-basis: 350px;
     width: 100%;
-    line-height: 1.5;
+    line-height: 3;
     font-size: 15px;
     border-radius: 6px;
     -webkit-border-radius: 6px;
@@ -529,8 +529,12 @@ html{
     box-shadow: 1.5px 1.5px 4px 1.5px rgb(212, 212, 212);
 }
 .footer {
-    flex-basis: 500px;
+    flex-basis: 250px;
     width: 100%;
+}
+
+.address {
+    flex-basis: 180px;
 }
 .copyright {
     font-size: 15px;
@@ -548,7 +552,9 @@ html{
 
 .rowOff {
     display: flex;
+    flex-wrap: wrap;
     margin: 20px;
+   
 }
 /*responsiveness for header items*/
 @media (max-width: 991px) {
@@ -574,6 +580,23 @@ html{
 }
 
 @media (max-width: 700px) {
+
+    .rowOff {
+        display: flex;
+        flex-wrap: wrap;
+        width:100%;
+        padding: 20px;
+    }
+
+    
+.Scroll-container:hover {
+    border: 1px blue solid;
+    transition: .8s;
+    -webkit-transition: .8s;
+    -moz-transition: .8s;
+    -ms-transition: .8s;
+    -o-transition: .8s;
+}
     .welcome-card{
         margin-top: 100px;
     }
