@@ -528,6 +528,21 @@ html{
 .bestPrice:hover {
     box-shadow: 1.5px 1.5px 4px 1.5px rgb(212, 212, 212);
 }
+
+.phoneCall {
+    width: 80px;
+    border-radius: 4px;
+    padding: 10px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+}
+
+.phoneCall:hover {
+    color: white;
+    background-color: blue;
+}
 .footer {
     flex-basis: 250px;
     width: 100%;
@@ -585,17 +600,14 @@ html{
         display: flex;
         flex-wrap: wrap;
         width:100%;
-        padding: 20px;
+        padding:0 20px;
+        align-content: center;
+        margin: 0 10px;
     }
 
     
 .Scroll-container:hover {
-    border: 1px blue solid;
-    transition: .8s;
-    -webkit-transition: .8s;
-    -moz-transition: .8s;
-    -ms-transition: .8s;
-    -o-transition: .8s;
+    border: none;
 }
     .welcome-card{
         margin-top: 100px;
