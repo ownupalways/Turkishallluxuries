@@ -39,7 +39,7 @@ html{
     height: 35vh;
     display: flex;
     justify-content:space-around;
-    align-items:flex-end;
+    align-items:center;
     padding: 2rem 0;
     background-color:var(--background);
     box-shadow: var(--box-shadow);
@@ -428,28 +428,6 @@ li {
    
 }
 /*responsiveness for header items*/
-@media (max-width: 991px) {
-    html{
-        font-size: 55%;
-    }
-    .header .cart-container .cart-items .cart-row .btn-danger{
-        float: right;
-        border: none;
-        height: 32px;
-        padding: 10px;
-        background: red;
-        color: var(--white);
-    }
-
-    .Scroll-container{
-        margin-top:20%;
-    }
-
-    .header {
-        padding: 2rem;
-    }
-}
-
 @media (max-width: 700px) {
 
     .rowOff {
@@ -460,7 +438,9 @@ li {
         align-content: center;
         margin: 0 10px;
     }
-
+    html{
+        font-size: 55%;
+    }
     .Scroll-container:hover {
         border: none;
     }
