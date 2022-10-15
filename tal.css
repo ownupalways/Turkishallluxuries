@@ -77,15 +77,18 @@ html{
     color: var(--white);
 }
 
+
 .dropdown:hover .dropdown_menu li {
     display: block;
 }
 
 .dropdown_menu {
-position: absolute;
-top:100%;
-/* perspective:1000px; */
-z-index:-1;
+    position: absolute;
+    top:100%;
+    z-index:-1;
+    width: 100%;
+    padding:0;
+    opacity:1;
 }
 
 li {
@@ -94,12 +97,16 @@ li {
     background-color:#34495e;
     padding: 10px;
     font-size: 16px;
-    width: auto;
     /* opacity: 0; */
    }
 
 li:hover{
     background-color:#2980b9;
+}
+
+.dropdown .list {
+    border: 0.5px var(--white) solid;
+    fill-opacity: 0;
 }
    
 
