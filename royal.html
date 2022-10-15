@@ -6,27 +6,34 @@
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
         <link rel="stylesheet" href="tal.css">
+        <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
         <script src="tal.js" defer></script>
         <title>Turkish All Luxuries</title>
     </head>
-    <body class="background">
+    <body class="body-things">
         <header class="header">
-            <a href="#" class="logo"> <i class="fas fa-shopping-trail">Parking</i></a>
+            <i class="fas fa-shopping-trail"><a href="index.html" class="logo">Parking</a></i>
             <nav class="navbar">
-                <a href="index.html">Home</a>
-                <a href="products.html">Products</a>
-                <a href="service.html">Services</a>
-                <!-- <a href="categories.html">categories</a> -->
-                <!-- <a href="reviews.html">reviews</a> -->
-                <a href="about.html">About</a>
-                <!-- <a href="blog.html">blogs</a> -->
+                <ul class="menuBox">
+                   <a href="index.html" class="dropdown">Home</a>
+                    <li class="dropdown dropdown-6">Products
+                        <ul class="dropdown_menu dropdown_menu--animated dropdown_menu-6">
+                            <a href="exotics.html" class="list">Exotic Couch</a>
+                            <a href="Dinning.html" class="list">Exotic Dinning</a>
+                            <a href="royal.html" class="list">Royal Beds</a>
+                            <a href="living.html" class="list">Smart Living Room</a>
+                        </ul>
+                    </li>
+                    <a href="about.html" class="dropdown">About</a>
+                    <a href="contact.html" class="dropdown">Contacts</a>
+                </ul>
             </nav>
 
             <div class="icon">
                 <div class="fas fa-bars" id="menu-btn"></div>
                 <div class="fas fa-search" id="search-btn"></div>
-                <div class="fas fa-shopping-cart" id="cart-btn"></div>
-                <div class="fas fa-user" id="user-btn"></div>
+                <!-- <div class="fas fa-shopping-cart" id="cart-btn"></div>
+                <div class="fas fa-user" id="user-btn"></div> -->
             </div>
 
             <form action="" class="search-form">
@@ -34,34 +41,34 @@
                 <label for="search-box" class="fas fa-search"></label>
             </form>
         </header>
-
         <div class="rowOff">
             <div class="sideOff"></div>
-            <div class="mainOff">
+            <div class="main">
                 <div class="Scroll-container">
                     <div id="card">
-                        <img class="image-setting  shop-image" src="talsingle/single couch.jpg">
-                        <p class="clear">Dark leather Couch </p>
+                        <img class="image-setting  shop-image" src="talxbed/x-bed1.jpeg">
+                        <div class="info">
+                            <i class='fas fa-angle-double-right' style='color:aliceblue'></i>
+                            <p class="clear">Dark leather Couch </p>
+                        </div>
+                    </div>
+                    <div id="card" ><img src="talxbed/x-bed.jpg" class="image-setting  shop-image">
+                        <div class="info">
+                            <i class='fas fa-angle-double-right arrowMove' style='color:aliceblue'></i>
+                            <p class="clear">Single Couch Cream</p>
+                        </div>
                     </div>
                     <div id="card">
-                        <img class="image-setting  shop-image" src="talsingle/backview single.jpg">
+                        <img class="image-setting  shop-image" src="talxbed/x-bed2.jpg">
                         <p class="clear">Dark Ex-Couch</p>
                     </div>
                     <div id="card">
-                        <img class="image-setting  shop-image" src="talsingle/single couch2.jpg">
-                        <p class="clear">Dark Ex-Couch</p>
+                        <img src="talxbed/x-bed3.jpg" class="image-setting  shop-image">
+                        <p class="clear">Three-Seater Sky</p>
                     </div>
                     <div id="card">
-                        <img class="image-setting  shop-image" src="talsingle/singleblack.jpg">
-                        <p class="clear">Dark Ex-Couch</p>
-                    </div>
-                    <div id="card">
-                        <img class="image-setting  shop-image" src="talsingle/single couch3.jpg">
-                        <p class="clear">Dark Ex-Couch</p>
-                    </div>
-                    <div id="card">
-                        <img class="image-setting  shop-image" src="talsingle/singlesimple.jpg">
-                        <p class="clear">Dark Ex-Couch</p>
+                        <img src="talxbed/x-bed4.jpg" class="image-setting  shop-image">
+                        <p class="clear">Three-Seater Sky</p>
                     </div>
                 </div>
             </div>
@@ -83,3 +90,6 @@
         </div>
     </body>
 </html>
+
+
+
