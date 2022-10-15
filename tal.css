@@ -370,7 +370,6 @@ li {
 .rowOffIn {
     display: flex;
     flex-wrap: wrap;
-    margin: 20px;
 }
 .main {
     flex: 80%;
@@ -391,13 +390,12 @@ li {
     flex-wrap: wrap;
 }
 .mainOff {
-    flex:70%;
-    padding: 20px;
+    flex:55%;
 }
 
 .sideOff {
-    flex: 30%;
-    padding: 20px;
+    flex: 15%;
+    margin:0 20px;   
 }
 .bestPrice {
     margin: 15px 10px;
