@@ -54,7 +54,7 @@ html{
     justify-content: center;
 }
 
-.dropdown, li>a {
+.dropdown, .list {
     padding: 10px 20px;
     width: 200px;
     display:flex;
@@ -67,14 +67,24 @@ html{
     z-index: 100;
 }
 
+.dropdown .drip {
+    color: white;
+}
+ 
+.list:hover .drip {
+    color:var(--general_btn);
+    background-color:var(--white)
+}
+
+
 .dropdown:hover {
     background: blue;
     cursor: pointer;
 }
 
-.dropdown:hover .dropdown_menu li {
+.dropdown:hover .dropdown_menu, .list {
     display: block;
-    padding:10px 20px;
+    /* padding:10px 20px; */
     background-color:var(--general_btn)
 }
 
