@@ -73,12 +73,14 @@ html{
     cursor: pointer;
 }
 
-.menuBox li a{
+.dropdown_menu a{
     color: var(--white);
+    z-index: 1;
+    border: 1px solid red;
 }
 
 
-.dropdown:hover .dropdown_menu li {
+.dropdown:hover .dropdown_menu a {
     display: block;
 }
 
@@ -91,7 +93,7 @@ html{
     opacity:1;
 }
 
-li {
+a {
     display:none;
     color:white;
     background-color:#34495e;
@@ -108,6 +110,8 @@ li:hover{
     border: 0.5px var(--white) solid;
     fill-opacity: 0;
 }
+
+
    
 
 
