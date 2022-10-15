@@ -54,97 +54,74 @@ html{
     justify-content: center;
 }
 
-.dropdown {
-    padding: 10px 20px;
-    width: 200px;
-    color: white;
-    position: relative;
-    font-size: 20px;
-    perspective: 1000px;
-    z-index: 100;
+.dropdown  li>a {
+   padding: 20px 40px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   color: white;
+   background: #34495e;
+   position: relative;
+   font-size: 18px;
+   perspective: 1000px;
+   z-index: 100;
 }
 
-.list {
-    width: 100%;
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    font-size:20px;
-    text-decoration:none;
-    z-index: 100;
-}
-/* .list:hover {
-    background-color:var(--white);
-}
-
-.list:hover .drip {
-    color: var(--general_btn);
-}
-*/
-
-.dropdown:hover {
-    background: blue;
+.dropdown :hover {
+    background: #2980b9;
     cursor: pointer;
-} 
+}
 
-.dropdown_menu {
+
+   .dropdown:hover .dropdown_menu li {
+    display: block;
+    width: 100%;
+   }
+
+
+ .dropdown_menu {
     position: absolute;
-    top: 100%;
-    left: 0;
-    width: 100%;
+    top:100%;
+    left:0;
+    width:100%;
     perspective:1000px;
-    z-index: -1;
-}
+    z-index:-1;
+ }
 
-.dropdown:hover .dropdown_menu li{
-    display: block;
-    background-color:var(--general_btn)
-}
-
-
-/* li {
-    display: none;
-    color: white;
-    width: 100%;
+li {
+    display:none;
+    color:white;
+    background-color:#34495e;
+    padding: 10px 20px;
     font-size: 16px;
-} */
+    opacity: 0;
+   }
 
-/* 
- ul .droppick {
-    display: none;
-} */
+li:hover{
+    background-color:#2980b9;
+}
+   
 
-/* animation of the menu */
-/* .dropdown:hover .dropdown_menu--animated {
+
+/*  Menu as a whole animated */
+.dropdown:hover .dropdown_menu--animated{
     display: block;
 }
-
 .dropdown_menu--animated {
     display: none;
 }
-
+    
 li {
     display: block;
     opacity: 1;
-} */
+}
 
-/* .dropdown_menu-6 {
-    animation:growDown 400ms ease-in-out fsorwards;
-    -webkit-animation:growDown 400ms ease-in-out fsorwards;
+.dropdown_menu-6 {
+    animation:growDown 300ms ease-in-out forwards;
     transform-origin: top center;
+    -webkit-animation:growDown 300ms ease-in-out forwards;
 }
 
-@keyframes growDown {
-    0% { transform:rotateX(-90deg); -webkit-transform:rotateX(-90deg); -moz-transform:rotateX(-90deg); -ms-transform:rotateX(-90deg); -o-transform:rotateX(-90deg);
-}
-
-    70% { transform:rotateX(20deg); -webkit-transform:rotateX(20deg); -moz-transform:rotateX(20deg); -ms-transform:rotateX(20deg); -o-transform:rotateX(20deg);
-}
-
-    100% { transform:rotateX(0); -webkit-transform:rotateX(0); -moz-transform:rotateX(0); -ms-transform:rotateX(0); -o-transform:rotateX(0);
-}
-} */
 .header .icon div{
     height: 3.5rem;
     width: 3.5rem;
