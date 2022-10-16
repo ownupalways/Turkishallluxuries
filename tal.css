@@ -234,6 +234,7 @@ li {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    margin:0 4rem 1.5rem 0;
     border-radius: 5px;
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
@@ -275,8 +276,9 @@ li {
     position: relative;
     overflow: hidden;
     margin:20px;
-    width: min(700px, 90%, 220px);
-    height: max(300px, 90%, 40vh);
+    width: 200px;
+    /* width: min(700px, 90%, 220px);
+    height: max(300px, 90%, 40vh); */
     border-radius: 8px 8px 6px 6px;
     box-shadow: var(--box-shadow);
     -webkit-border-radius: 8px 8px 6px 6px;
@@ -331,34 +333,16 @@ li {
     font-weight: bolder;
     padding-bottom: 5px;
 }
-.Scroll-container #card .price{
-    float: right;
-    margin: 5px 8px 5px 5px;
-    color: var(--black);
-    font-size: 15px;
-    font-weight: bolder;
-    text-decoration: underline gainsboro;
-}
-
 .Scroll-container #card .image-setting {
     border-radius: 8px 8px 0 0;
     height: 200px;
+    width: 100%;
     -webkit-border-radius: 8px 8px 0 0;
     -moz-border-radius: 8px 8px 0 0;
     -ms-border-radius: 8px 8px 0 0;
     -o-border-radius: 8px 8px 0 0;
 }
 
-/*Decision on cards*/
-.Scroll-container #card .btn-host{
-    display: flex;
-    flex-wrap: wrap;
-    flex-flow: column;
-    gap: 10px;
-    margin: 32px 8px auto;
-    bottom: 0;
-    padding-bottom: 10px;
-}
 /* Index page Layout */
 .rowOffIn {
     display: flex;
@@ -476,6 +460,9 @@ li {
         display: block;
     }
 
+    .menuBox {
+        display:none;
+    }
     .header .navbar a{
         margin: 2rem 2.5rem;
         display: block;
