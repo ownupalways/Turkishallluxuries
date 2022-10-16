@@ -27,6 +27,21 @@
 // let arrowMove = document.getElementsByClassName('arrowMove')
 // let info = document.getElementsByClassName('info')
 
-let MENUBOX = document.getElementsByClassName('menuBox');
-let MENUBTN = document.getElementById('menu-btn');
-console.log(MENUBOX)
+let MenuBox = document.getElementsByClassName('menuBox');
+let MenuBtn = document.getElementById('menu-btn');
+let CLOSE = document.getElementById('close')
+
+MenuBtn.addEventListener('click', showUp)
+function showUp() {
+    if (MenuBtn.style.display === "none") {
+        MenuBox.style.display = "block"
+        CLOSE.style.display = "block"
+    }else {
+        MenuBtn.style.display = "block"
+        CLOSE.style.display = "none"
+        MenuBox.style.display = "none"
+    }
+}
+
+// search functionality On maxWidth
+let MenuBoxSearch = document.getElementsByClassName('menuBox');

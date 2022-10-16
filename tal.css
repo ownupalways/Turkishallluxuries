@@ -175,6 +175,9 @@ li {
 #menu-btn{
     display: none;
 }
+#close {
+    display: none;
+}
 
 .header .search-form{
     position: absolute;
@@ -460,6 +463,7 @@ li {
         display: block;
     }
 
+
     .menuBox {
         display:none;
     }
@@ -467,9 +471,9 @@ li {
         margin: 2rem 2.5rem;
         display: block;
     }
-    #menu-btn{
+    /* #menu-btn{
         display: inline-block;
-    }
+    } */
 
     .header .search-form{
         width: 90%;
