@@ -22,6 +22,7 @@
     --background_page: rgb(122, 112, 123);
     --general_btn:rgb(88, 20, 88);
     --overCard:rgba(7, 6, 6, 0.5);
+    --mainColor:#34495e;
 }
 
 html{
@@ -73,13 +74,6 @@ html{
     cursor: pointer;
 }
 
-.dropdown_menu a{
-    color: var(--white);
-    z-index: 1;
-    border: 1px solid red;
-}
-
-
 .dropdown:hover .dropdown_menu a {
     display: block;
 }
@@ -87,7 +81,6 @@ html{
 .dropdown_menu {
     position: absolute;
     top:100%;
-    z-index:-1;
     width: 100%;
     padding:0;
     opacity:1;
@@ -99,7 +92,6 @@ a {
     background-color:#34495e;
     padding: 10px;
     font-size: 16px;
-    /* opacity: 0; */
    }
 
 li:hover{
@@ -108,11 +100,12 @@ li:hover{
 
 .dropdown .list {
     border: 0.5px var(--white) solid;
-    fill-opacity: 0;
 }
 
+.dropdown .list:hover {
+    background-color:#2980b9;
+}
 
-   
 
 
 /*  Menu as a whole animated */
@@ -454,6 +447,14 @@ li {
 @media (max-width: 700px) {
 
     .rowOff {
+        display: flex;
+        flex-wrap: wrap;
+        width:100%;
+        align-content: center;
+        margin: 0 10px;
+    }
+
+    .rowOffIn {
         display: flex;
         flex-wrap: wrap;
         width:100%;
