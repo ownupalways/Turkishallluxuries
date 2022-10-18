@@ -244,7 +244,7 @@ li {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    margin:0 4rem 1.5rem 0;
+    margin:0 4rem;
     border-radius: 5px;
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
@@ -262,18 +262,18 @@ li {
 }
 
 .ScrollTab .lableIn {
-    /* padding: 10px; */
     margin: 4rem;
     width: 150px;
     font-size: 18px;
     text-align: center;
+    border: red 1px solid;
 
 }
 
 #card{
     position: relative;
     overflow: hidden;
-    margin:20px;
+    margin:10px;
     width: 200px;
     /* width: min(700px, 90%, 220px);
     height: max(300px, 90%, 40vh); */
@@ -347,7 +347,8 @@ li {
     flex-wrap: wrap;
 }
 .main {
-    flex: 80%;
+    flex: 60%;
+    margin: 2rem 4rem;
 }
 
 .sideOffIn {
