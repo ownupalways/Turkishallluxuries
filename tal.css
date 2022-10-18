@@ -39,11 +39,18 @@ html{
     width: 100%;
     height: 35vh;
     display: flex;
-    justify-content:space-around;
+    flex-wrap: wrap;
+    justify-content:center;
     align-items:center;
     padding: 2rem 0;
     background-color:var(--background);
     box-shadow: var(--box-shadow);
+}
+
+.navbar {
+    display: flex;
+    justify-content:space-around;
+    align-items:center;
 }
 .header .logo{
     font-size: 2.5rem;
@@ -151,7 +158,7 @@ li {
     }
 }
 
-.header .icon div{
+.icon div{
     height: 3.5rem;
     width: 3.5rem;
     line-height: 3.5rem;
@@ -166,20 +173,20 @@ li {
     -o-border-radius:5px;
 }
 
-.header .icon div:hover{
+.icon div:hover{
     background: var(--onion);
     color: var(--white);
     cursor: pointer;
 }
 
-#menu-btn{
+.icon #menu-btn{
     display: none;
 }
-#close {
+.icon #close {
     display: none;
 }
 
-.header .search-form{
+.icon .search-form{
     position: absolute;
     top: 110%;
     right: -110%;
@@ -195,7 +202,7 @@ li {
     -moz-border-radius: 5rem;
     -o-border-radius: 5rem;
 }
-.header .search-form.active {
+.icon .search-form.active {
     right: 1.5rem;
     transition:.4s linear;
     -webkit-transition:.4s linear;
@@ -294,6 +301,9 @@ li {
     width: 100%;
 }
 
+.ScrollTab #card .shop-image{
+    width: 100%;
+}
 /***************Home page image Info****************/
 .Scroll-container .info {
     position:absolute;
@@ -467,7 +477,7 @@ li {
     .menuBox {
         display:none;
     }
-    .header .navbar a{
+    .navbar .menuBox > a{
         margin: 2rem 2.5rem;
         display: block;
     }
@@ -482,7 +492,8 @@ li {
     .header .cart-container{
         width: 80%;
     }
-    .header .navbar{
+    
+    .navbar{
         position: absolute;
         top: 110%;
         right: -110%;
@@ -495,14 +506,6 @@ li {
         -o-border-radius: .5rem;
     }
 
-    .header .navbar.active {
-        right: 2rem;
-        transition: .4s linear;
-        -webkit-transition: .4s linear;
-        -moz-transition: .4s linear;
-        -ms-transition: .4s linear;
-        -o-transition: .4s linear;
-    }
     
 }
 
