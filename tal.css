@@ -244,7 +244,7 @@ li {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    margin:0 4rem;
+    margin:2rem 4rem ;
     border-radius: 5px;
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
@@ -262,12 +262,9 @@ li {
 }
 
 .ScrollTab .lableIn {
-    margin: 4rem;
     width: 150px;
     font-size: 18px;
     text-align: center;
-    border: red 1px solid;
-
 }
 
 #card{
@@ -345,19 +342,21 @@ li {
 .rowOffIn {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
+    /* align-items: center; */
 }
 .main {
-    flex: 60%;
-    margin: 2rem 4rem;
+    flex: 70%;
+    /* margin: 2rem 4rem; */
 }
 
 .sideOffIn {
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
     flex: 20%;
-    margin-bottom: 20px;
-    padding: 20px;
-    align-items: flex-end;
+    /* margin: 2rem; */
+    display: flex;
+    gap: 20px;
 }
 
 /* Other pages layout */
@@ -404,13 +403,15 @@ li {
     color: white;
     background-color: blue;
 }
-.footer {
+.media {
     flex-basis: 250px;
     width: 100%;
 }
 
 .address {
     flex-basis: 180px;
+    width: 100%;
+    
 }
 .copyright {
     font-size: 15px;
