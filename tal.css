@@ -188,19 +188,21 @@ li {
 
 .icon .search-form{
     position: absolute;
-    top: 110%;
-    right: -110%;
-    width: 50rem;
+    top: 14%;
+    display: none;
+    /*right: -110%;
+    */width: 25rem;
     height: 4.5rem;
     padding: 7px;
     background:var(--background_page);
-    border-radius: 5rem;
+    border-radius: 1rem;
     overflow: hidden;
     display: flex;
     align-items: center;
-    -webkit-border-radius: 5rem;
-    -moz-border-radius: 5rem;
-    -o-border-radius: 5rem;
+    -webkit-border-radius: 1rem;
+    -moz-border-radius: 1rem;
+    -o-border-radius: 1rem;
+    -ms-border-radius: 1rem;
 }
 .icon .search-form.active {
     right: 1.5rem;
@@ -356,7 +358,7 @@ li {
     flex: 20%;
     /* margin: 2rem; */
     display: flex;
-    gap: 20px;
+    gap: 10px;
 }
 
 /* Other pages layout */
@@ -370,12 +372,12 @@ li {
 
 .sideOff {
     flex: 15%;
-    margin:0 20px;   
+    margin:0 4rem;   
 }
 .bestPrice {
     margin: 15px 10px;
     padding:15px;
-    flex-basis: 350px;
+    /* flex-basis: 350px; */
     width: 100%;
     line-height: 3;
     font-size: 15px;
@@ -404,18 +406,19 @@ li {
     background-color: blue;
 }
 .media {
-    flex-basis: 250px;
+    /* flex-basis: 250px; */
     width: 100%;
 }
 
 .address {
-    flex-basis: 180px;
+    /* flex-basis: 180px; */
     width: 100%;
     
 }
 .copyright {
     font-size: 15px;
     width: 100%;
+    margin-bottom: 0;
 }
 
 .cont {
