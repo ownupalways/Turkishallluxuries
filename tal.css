@@ -252,19 +252,6 @@ li {
     -o-border-radius: 5px;
 }
 
-.ScrollTab{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    margin:0 4rem 1.5rem 0;
-    border-radius: 5px;
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-    -ms-border-radius: 5px;
-    -o-border-radius: 5px;
-}
-
 .ScrollTab:hover {
     border: 1px blue solid;
     transition: .8s;
@@ -274,9 +261,10 @@ li {
     -o-transition: .8s;
 }
 
-.Scroll-container .lableIn {
-    padding: 20px;
-    width: 200px;
+.ScrollTab .lableIn {
+    /* padding: 10px; */
+    margin: 4rem;
+    width: 150px;
     font-size: 18px;
     text-align: center;
 
@@ -301,9 +289,6 @@ li {
     width: 100%;
 }
 
-.ScrollTab #card .shop-image{
-    width: 100%;
-}
 /***************Home page image Info****************/
 .Scroll-container .info {
     position:absolute;
