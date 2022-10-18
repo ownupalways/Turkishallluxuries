@@ -446,6 +446,10 @@ li {
         align-content: center;
         margin: 0 10px;
     }
+
+.sideOffIn {
+    gap: 0;
+    }
     html{
         font-size: 55%;
     }
