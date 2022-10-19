@@ -186,10 +186,9 @@ li {
     display: none;
 }
 
-.icon .search-form{
+/* .search-form{
     position: absolute;
     top: 14%;
-    width: 12rem;
     height: 4.5rem;
     padding: 7px;
     display: flex;
@@ -205,9 +204,28 @@ li {
     -moz-transition: width 0.4s ease-in-out;
     -ms-transition: width 0.4s ease-in-out;
     -o-transition: width 0.4s ease-in-out;
-} 
+}  */
 
-.search-form{
+input[type=text] {
+    height: 4.5rem;
+    width: 80px;
+    padding: 7px;
+    z-index: 1;
+    align-items: center;
+    background:var(--background_page);
+    border-radius: 1rem;
+    -webkit-border-radius: 1rem;
+    -moz-border-radius: 1rem;
+    -o-border-radius: 1rem;
+    -ms-border-radius: 1rem;
+    transition: width 0.4s ease-in-out;
+    -webkit-transition: width 0.4s ease-in-out;
+    -moz-transition: width 0.4s ease-in-out;
+    -ms-transition: width 0.4s ease-in-out;
+    -o-transition: width 0.4s ease-in-out;
+}
+
+/* .search-form{
     height: 100%;
     width:auto;
     background: none;
@@ -217,16 +235,14 @@ li {
     color: var(--white);
     font-weight: bold;
     border: none;
-}
-.search-form input:focus{
-   outline: none;
+} */
+input[type=text]:focus{
+   outline:#34495e;
+   width:200px;
+   margin-right: 2rem;
 }
 
-.search-form label{
-    font-size: 2.2rem;
-    padding-right: 1.5rem;
-    color: var(--white);
-}
+
 
 .search-form label:hover{
     cursor: pointer;
@@ -414,8 +430,12 @@ li {
     background-color: var(--mainColor);
     color: var(--white);
     width: 100%;
+    line-height: 1.5;
     font-size: 18px;
     border-radius: 6px;
+}
+.address div i {
+    margin: 0 8px 8px 0;
 }
 .copyright {
     font-size: 15px;
