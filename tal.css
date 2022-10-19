@@ -93,7 +93,7 @@ html{
     opacity:1;
 }
 
-a {
+.list {
     display:none;
     color:white;
     background-color:var(--mainColor);
@@ -186,33 +186,18 @@ li {
     display: none;
 }
 
-/* .search-form{
-    position: absolute;
-    top: 14%;
-    height: 4.5rem;
-    padding: 7px;
-    display: flex;
-    align-items: center;
-    background:var(--background_page);
-    border-radius: 1rem;
-    -webkit-border-radius: 1rem;
-    -moz-border-radius: 1rem;
-    -o-border-radius: 1rem;
-    -ms-border-radius: 1rem;
-    transition: width 0.4s ease-in-out;
-    -webkit-transition: width 0.4s ease-in-out;
-    -moz-transition: width 0.4s ease-in-out;
-    -ms-transition: width 0.4s ease-in-out;
-    -o-transition: width 0.4s ease-in-out;
-}  */
-
 input[type=text] {
-    height: 4.5rem;
     width: 80px;
-    padding: 7px;
-    z-index: 1;
-    align-items: center;
-    background:var(--background_page);
+    margin-left: 10px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    color: var(--mainColor);
+    background-image: url(image/search.jpg);
+    background-position: 10px;
+    background-size: 20px;
+    background-repeat: no-repeat;
+    padding: 12px 20px 12px 40px;
     border-radius: 1rem;
     -webkit-border-radius: 1rem;
     -moz-border-radius: 1rem;
@@ -225,21 +210,9 @@ input[type=text] {
     -o-transition: width 0.4s ease-in-out;
 }
 
-/* .search-form{
-    height: 100%;
-    width:auto;
-    background: none;
-    text-transform: none;
-    font-size: 1.6rem;
-    padding: 0 1.5rem;
-    color: var(--white);
-    font-weight: bold;
-    border: none;
-} */
 input[type=text]:focus{
-   outline:#34495e;
-   width:200px;
-   margin-right: 2rem;
+   outline:1px solid var(--mainColor);
+   width:380px;
 }
 
 
@@ -264,7 +237,7 @@ input[type=text]:focus{
 }
 
 .ScrollTab:hover {
-    border: 1px blue solid;
+    border: 1px solid var(--mainColor);
     transition: .8s;
     -webkit-transition: .8s;
     -moz-transition: .8s;
@@ -402,7 +375,9 @@ input[type=text]:focus{
 }
 
 .phoneCall {
-    width: 80px;
+    width: 180px;
+    color: white;
+    border: 0.5px var( --white) solid;
     border-radius: 4px;
     padding: 10px;
     -webkit-border-radius: 4px;
@@ -412,8 +387,8 @@ input[type=text]:focus{
 }
 
 .phoneCall:hover {
-    color: white;
-    background-color: blue;
+    
+    background-color: rgb(21, 21, 24);
 }
 .media {
     margin: 15px 10px;
@@ -452,8 +427,15 @@ input[type=text]:focus{
     margin: 10px 0;
     font-size: 18px;
     color: var(--white);
+    opacity: .6;
 }
-
+.cont:hover {
+   opacity: 1;
+   font-weight: bolder;
+}
+.cont i {
+    margin: 10px;
+}
 /*responsiveness for header items*/
 @media (max-width: 700px) {
 
