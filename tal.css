@@ -69,7 +69,7 @@ html{
    justify-content: center;
    align-items: center;
    color: white;
-   background: #34495e;
+   background: var(--mainColor);
    position: relative;
    font-size: 18px;
    perspective: 1000px;
@@ -96,7 +96,7 @@ html{
 a {
     display:none;
     color:white;
-    background-color:#34495e;
+    background-color:var(--mainColor);
     padding: 10px;
     font-size: 16px;
    }
@@ -370,10 +370,11 @@ li {
 .bestPrice {
     margin: 15px 10px;
     padding:15px;
-    /* flex-basis: 350px; */
+    background-color: var(--mainColor);
+    color: var(--white);
     width: 100%;
     line-height: 3;
-    font-size: 15px;
+    font-size: 18px;
     border-radius: 6px;
     -webkit-border-radius: 6px;
     -moz-border-radius: 6px;
@@ -381,7 +382,7 @@ li {
     -o-border-radius: 6px;
 }
 .bestPrice:hover {
-    box-shadow: 1.5px 1.5px 4px 1.5px rgb(212, 212, 212);
+    box-shadow: 4px 1.5px 4px 1.5px rgb(212, 212, 212);
 }
 
 .phoneCall {
@@ -399,28 +400,38 @@ li {
     background-color: blue;
 }
 .media {
-    /* flex-basis: 250px; */
+    margin: 15px 10px;
+    padding:15px;
+    background-color: var(--mainColor);
     width: 100%;
+    font-size: 18px;
+    border-radius: 6px;
 }
 
 .address {
-    /* flex-basis: 180px; */
+    margin: 15px 10px;
+    padding:15px;
+    background-color: var(--mainColor);
+    color: var(--white);
     width: 100%;
-    
+    font-size: 18px;
+    border-radius: 6px;
 }
 .copyright {
     font-size: 15px;
     width: 100%;
     margin-bottom: 0;
+    margin: 15px 10px;
+    padding:15px;
+    background-color: var(--mainColor);
+    color: var(--white);
+    border-radius: 6px;
 }
 
 .cont {
     margin: 10px 0;
     font-size: 18px;
-}
-
-.cont i {
-    margin-right: 14px;
+    color: var(--white);
 }
 
 /*responsiveness for header items*/
