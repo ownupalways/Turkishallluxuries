@@ -44,4 +44,9 @@ function showUp() {
 }
 
 // search functionality On maxWidth
-let MenuBoxSearch = document.getElementsByClassName('menuBox');
+// let SearchBlock = document.getElementsByClassName('search-form');
+// let inputTab = document.getElementsByTagName("input")
+
+// function openSearch(){
+//     SearchBlock.style.width = "25rem"
+// }
