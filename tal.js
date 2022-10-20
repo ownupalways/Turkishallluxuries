@@ -27,22 +27,28 @@
 // let arrowMove = document.getElementsByClassName('arrowMove')
 // let info = document.getElementsByClassName('info')
 
-let menu = document.getElementsByClassName('menuBox');
+let menu = document.getElementsByClassName('menuBox')[0];
 let MenuBtn = document.getElementById('menu-btn');
 let CLOSE = document.getElementById('close')
 
-MenuBtn.addEventListener('click', showUp)
-function showUp() {
-    if (MenuBtn.style.display === "none") {
-        MenuBox = menu.parentElement.nextSiblingElement
-        MenuBox.style.display = "block"
-        CLOSE.style.display = "block"
-    }else {
-        MenuBtn.style.display = "block"
-        CLOSE.style.display = "none"
-        MenuBox.style.display = "none"
-    }
+menu.onclick = () => {
+    
 }
+
+// MenuBtn.addEventListener('click', showUp)
+// function showUp() {
+//     if (MenuBtn.style.display === "none") {
+//         // MenuBox = menu.parentElement.nextSiblingElement
+//         // console.log(MenuBox)
+//         // MenuBox.style.display = "block"
+//         MenuBtn.style.display = "block"
+//         CLOSE.style.display = "none"
+//     }else {
+//         MenuBtn.style.display = "none"
+//         CLOSE.style.display = "block"
+//         // MenuBox.style.display = "none"
+//     }
+// }
 
 // search functionality On maxWidth
 // let SearchBlock = document.getElementsByClassName('search-form');
