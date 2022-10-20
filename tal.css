@@ -55,6 +55,7 @@ html{
 .header .logo{
     font-size: 2.5rem;
     font-weight: bolder;
+    align-items: flex-start;
 } 
 /**********MENU STYLING**********/
 .menuBox {
@@ -164,6 +165,7 @@ li {
     line-height: 3.5rem;
     margin: 0 .5rem;
     border-radius:5px;
+    display:flex ;
     background: rgba(243, 241, 241, 0.5);
     color:var(--white);
     font-size: 2rem;
@@ -180,7 +182,7 @@ li {
 }
 
 .icon #menu-btn{
-    display: none;
+    display: block;
 }
 .icon #close {
     display: none;
@@ -499,14 +501,6 @@ ul{
 /*responsiveness for header items*/
 @media (max-width: 700px) {
 
-    .rowOff {
-        display: flex;
-        flex-wrap: wrap;
-        width:100%;
-        align-content: center;
-        margin: 0 10px;
-    }
-
     .rowOffIn {
         display: flex;
         flex-wrap: wrap;
@@ -520,19 +514,17 @@ ul{
         gap: 0;
     }
 
-        html{
-            font-size: 55%;
-        }
-        .Scroll-container:hover {
-            border: none;
-        }
-        .welcome-card{
-            margin-top: 100px;
-        }
+    html{
+        font-size: 55%;
+    }
+    .Scroll-container:hover {
+        border: none;
+    }
 
-        .icon #menu-btn{
+    .icon #menu-btn{
         display: block;
-        }
+
+    }
 
 
     .menuBox {
@@ -542,18 +534,6 @@ ul{
         margin: 2rem 2.5rem;
         display: block;
     }
-    /* #menu-btn{
-        display: inline-block;
-    } */
-
-    /* .header .search-form{
-        width: 90%;
-    } */
-
-    .header .cart-container{
-        width: 80%;
-    }
-    
     .navbar{
         position: absolute;
         top: 110%;
@@ -565,7 +545,5 @@ ul{
         -webkit-border-radius: .5rem;
         -ms-border-radius: .5rem;
         -o-border-radius: .5rem;
-    }
-
-    
+    }    
 }
