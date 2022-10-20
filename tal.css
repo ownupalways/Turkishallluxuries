@@ -159,14 +159,10 @@ li {
     }
 }
 
-.icon div{
-    height: 3.5rem;
-    width: 3.5rem;
-    line-height: 3.5rem;
+.icon {
     margin: 0 .5rem;
     border-radius:5px;
     display:flex ;
-    background: rgba(243, 241, 241, 0.5);
     color:var(--white);
     font-size: 2rem;
     text-align: center;
@@ -175,6 +171,19 @@ li {
     -o-border-radius:5px;
 }
 
+.icon div {
+    height: 3.5rem;
+    width: 3.5rem;
+    line-height: 3.5rem;
+    border-radius:5px;
+    background: rgba(243, 241, 241, 0.5);
+    color:var(--white);
+    font-size: 2rem;
+    text-align: center;
+    -webkit-border-radius:5px;
+    -ms-border-radius:5px;
+    -o-border-radius:5px;
+}
 .icon div:hover{
     background: var(--onion);
     color: var(--white);
@@ -182,7 +191,7 @@ li {
 }
 
 .icon #menu-btn{
-    display: block;
+    display: none;
 }
 .icon #close {
     display: none;
@@ -534,16 +543,4 @@ ul{
         margin: 2rem 2.5rem;
         display: block;
     }
-    .navbar{
-        position: absolute;
-        top: 110%;
-        right: -110%;
-        width: 30rem;
-        background: var(--background_page);
-        box-shadow: var(--box-shadow);
-        border-radius: .5rem;
-        -webkit-border-radius: .5rem;
-        -ms-border-radius: .5rem;
-        -o-border-radius: .5rem;
-    }    
 }
