@@ -32,7 +32,7 @@ let MenuBtn = document.getElementById('menu-btn');
 let CLOSE = document.getElementById('close')
 
 menu.onclick = () => {
-    
+    parentElementSibling.childNode[1].style.display = "block";
 }
 
 // MenuBtn.addEventListener('click', showUp)
