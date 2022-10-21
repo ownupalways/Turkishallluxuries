@@ -11,70 +11,55 @@
     </head>
     <body class="body-things">
         <header class="header">
-            <a href="#" class="logo"> <i class="fas fa-shopping-trail">Parking</i></a>
-            <nav class="navbar">
-                <a href="index.html">Home</a>
-                <a href="couch.html">Couch</a>
-                <a href="service.html">Services</a>
-                <a href="categories.html">categories</a>
-                <a href="reviews.html">reviews</a>
-                <a href="about.html">About</a>
-                <a href="blog.html">blogs</a>
-            </nav>
+            <div class="fas fa-shopping-trail"><a href="index.html" class="logo">Parking</a></div>
+            <div class="navbar">
+                <ul class="menuBox">
+                   <a href="index.html" class="dropdown">Home</a>
+                    <li class="dropdown dropdown-6">Products
+                        <ul class="dropdown_menu dropdown_menu--animated dropdown_menu-6">
+                            <a href="exotics.html" class="list">Exotic Couch</a>
+                            <a href="Dinning.html" class="list">Exotic Dinning</a>
+                            <a href="royal.html" class="list">Royal Beds</a>
+                            <a href="living.html" class="list">Smart Living Room</a>
+                        </ul>
+                    </li>
+                    <a href="about.html" class="dropdown">About</a>
+                    <a href="contact.html" class="dropdown">Contacts</a>
+                </ul>
+            </div>
 
             <div class="icon">
                 <div class="fas fa-bars" id="menu-btn"></div>
-                <div class="fas fa-search" id="search-btn"></div>
-                <div class="fas fa-shopping-cart" id="cart-btn"></div>
-                <div class="fas fa-user" id="user-btn"></div>
+                <div class="fas fa-window-close" id="close" ></div>
             </div>
 
-            <form action="" class="search-form">
-                <input type="search" id="search-box" placeholder="search item here...">
-                <label for="search-box" class="fas fa-search"></label>
-            </form>
-
-            <div class="cart-container container-section">
-                <div class="cart-rows">
-                    <span class="cart-item cart-header cart-column">ITEM</span>
-                    <span class="cart-item cart-header cart-column price">PRICE</span>
-                    <span class="cart-item cart-header cart-column">QUANTITY</span>
-                </div>
-                <div class="cart-items">
-                </div>
-                <div class="cart-total">
-                    <strong class="cart-total-title">Total: </strong>
-                    <span class="cart-total-price">$0</span>
-                </div>
-                <div class="purchase">
-                    <button class="btn btn-purchase"  type="button">PURCHASE</button>
-                </div>
+            <div id="search-btn">
+                <input type="text" id="search-box" placeholder="search item here...">
             </div>
-
-
-            <form action="" class="login">
-                <h3>Login Now</h3>
-                <input type="email"placeholder ="Email" class="input-data">
-                <input type="password" placeholder = "Password" class="input-data">
-                <input type="submit" value="Login Now" class="btn">
-                <p>Forget Password? <a href="#">Click here</a></p>
-                <p>Don't have an account? <a href="#">Create Account</a></p>
-            </form>
         </header>
-    <div class="row">
-        <div class="column side"></div>
-        <div class="column middle">
-            <div class="About-card">
-                <p><b>About</b></p>
-                <p>This is an E-commerce site developed to merchandise Turkish Product of all kind</p><br>
-                <ul>
-                    <li>Such as high quality Home Interior Products</li>
-                    <li>Building material like Sound-proof doors</li>
-                    <li>Bullet-Proof doors</li>
-                </ul>
+        <div class="rowOffIn">
+            <div class="sideOffIn">
+                <div class="bestPrice">
+                    <p>Get best price this season as you patronize Us</p>
+                    <a href="tel:+2340000000" class="phoneCall"><i class='fab fas fa-phone-alt' style='font-size:15px'> call now Mr Oladayo</i></a>
+                    <p>for price and customize product design deliverable in a good speed</p>
+                </div>
+                <div class="media">
+                    <div class="cont"><i class='fab fa-whatsapp' style='font-size:30px'></i>WhatsApp</div>
+                    <div class="cont"><i class='fab fa-facebook' style='font-size:30px'></i>Facebook</div>
+                    <div class="cont"><i class='fab fa-twitter' style='font-size:30px'></i>Twitter</div>
+                    <div class="cont"><i class='fab fa-instagram' style='font-size:30px'></i>Instagram</div>
+                </div>
+                <div class="address">
+                    <div><i class='fab fas fa-directions' style='font-size:30px'></i>Visit our office address in Turkey<br><br> We give the same high customer satisfaction from any end.</div>
+                </div>
+                <div class="copyright">Copyright 2022, All right reserved</div>
+            </div>
+            <div class="main">
+                <div class="Scroll-container">
+                    
+                </div>
             </div>
         </div>
-        <div class="column side"></div>
-    </div>
-</body>
+    </body>
 </html>
