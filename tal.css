@@ -355,18 +355,16 @@ input[type=text]:focus{
     flex-wrap: wrap;
     justify-content: center;
     padding-top: 12.5rem;
-    /* align-items: center; */
+    align-items: center;
 }
 .main {
     flex: 70%;
-    /* margin: 2rem 4rem; */
 }
 
 .sideOffIn {
     display: flex;
     flex-wrap: wrap;
     flex: 20%;
-    /* margin: 2rem; */
     display: flex;
     gap: 10px;
 }
@@ -451,64 +449,6 @@ input[type=text]:focus{
     margin: 10px;
 }
 
-/*About page*/
-.about-site{
-    color: aliceblue;
-}
-
-/*contacts page*/
-.row:after {
-    content:"";
-    display: table;
-    clear: both;
-}
-
-.column{
-    float: left;
-    margin-bottom: 16px;
-}
-
-.side {
-    width:20%;
-    background-color: crimson;
-}
-
-.middle {
-    width: 60%;
-}
-/* .shop-image{
-    border-top-left-radius:10px;
-    border-top-right-radius: 10px;
-} */
-.person{
-    display:inline-block;
-}
-.personprofile {
-    text-align: center;
-    padding: 15px;
-}
-.About-card{
-    width:90%;
-    height: 50%;
-    padding: 20px;
-    background:var(--background2);
-    margin:35px 15px;
-    border-radius:10px;
-}
-ul{
-    line-height:1.5;
-    padding-left:10px;
-}
-.person-card{
-    width: 350px;
-    display:inline-block;
-    background-color: aliceblue;
-    margin: 35px 15px;
-    border-radius:10px;
-}
-.fad{
-    color: black;
-}
 
 /*responsiveness for header items*/
 @media (max-width: 1000px) {
@@ -564,6 +504,10 @@ ul{
      
     .menuBox {
         display:none;
+        background-color:var(--mainColor);
+        position: absolute;
+        top: 58%;
+        left:1.8%;
     }
     .navbar .menuBox > a{
         margin: 2rem 2.5rem;
@@ -603,9 +547,9 @@ ul{
     }
     .header #search-btn {
         order: 4;
-       right: 0;
-       position: absolute;
-       margin-right: 2rem;
+        right: 0;
+        position: absolute;
+        margin-right: 2rem;
     }
     input[type=text]:focus{
         outline:1px solid var(--mainColor);
@@ -621,20 +565,15 @@ ul{
     }
     .menuBox {
         display:none;
-        /* position: absolute;
-        top: 50%;
-        margin-top: 50%; */
+        background-color:var(--mainColor);
+        position: absolute;
+        top: 58%;
+        left:1.8%;
     }
 
-    .navbar {
-        position: relative;
-        /* display: flex;
-        flex-direction: column;
-        justify-content: left;
-        align-content: flex-end; */
-    }
-    /* .navbar .menuBox > a{
+
+    .navbar .menuBox > a{
         margin: 2rem 2.5rem;
         display: block; 
-    }*/
+    }
 } 
