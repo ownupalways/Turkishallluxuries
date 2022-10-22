@@ -127,11 +127,11 @@ html{
 
 
 /*  Menu as a whole animated */
-.dropdown:hover .dropdown_menu--animated{
-    display: block;
-}
 .dropdown_menu--animated {
     display: none;
+}
+.dropdown:hover .dropdown_menu--animated{
+    display: block;
 }
     
 li {
@@ -283,8 +283,6 @@ input[type=text]:focus{
     overflow: hidden;
     margin:10px;
     width: 200px;
-    /* width: min(700px, 90%, 220px);
-    height: max(300px, 90%, 40vh); */
     border-radius: 8px 8px 6px 6px;
     box-shadow: var(--box-shadow);
     -webkit-border-radius: 8px 8px 6px 6px;
@@ -575,5 +573,17 @@ input[type=text]:focus{
     .navbar .menuBox > a{
         margin: 2rem 2.5rem;
         display: block; 
+    }
+
+    .dropdown  {
+        padding: 20px 40px;
+        display: flex;
+        width: 200px;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        background: var(--mainColor);
+        position: relative;
+        font-size: 18px;
     }
 } 
