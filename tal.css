@@ -519,6 +519,7 @@ input[type=text]:focus{
 
     .header .fas {
         order: 2;
+        padding-left: 5rem;
     }
 
     .header .navbar {
@@ -550,8 +551,8 @@ input[type=text]:focus{
         width: 250px;
         display:none;
         position: absolute;
-        top: 58%;
-        left:1.8%;
+        top: 66%;
+        left:0;
         border: 1px solid var(--mainColor);
     }
 
