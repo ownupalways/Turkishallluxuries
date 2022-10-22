@@ -14,5 +14,8 @@
             "username": "admin",
             "password": "Gooddiesalways0304"
         }
+    ],
+    "githubPullRequests.ignoredPullRequestBranches": [
+        "main"
     ]
 }

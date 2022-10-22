@@ -508,7 +508,7 @@ input[type=text]:focus{
         left:1.8%;
     }
     .navbar .menuBox > a{
-        margin: 2rem 2.5rem;
+        margin: 0;
         display: block;
     }
 }
@@ -563,7 +563,6 @@ input[type=text]:focus{
     }
     .menuBox {
         display:none;
-        background-color:var(--mainColor);
         position: absolute;
         top: 58%;
         left:1.8%;
@@ -571,18 +570,19 @@ input[type=text]:focus{
 
 
     .navbar .menuBox > a{
-        margin: 2rem 2.5rem;
+        margin: 0;
         display: block; 
+        width: 100%;
     }
 
     .dropdown  {
         padding: 20px 40px;
         display: flex;
-        width: 200px;
+        width: 100%;
         justify-content: center;
         align-items: center;
         color: white;
-        background: var(--mainColor);
+        /* background: var(--mainColor); */
         /* position: relative; */
         font-size: 18px;
         /* perspective: 1000px;
@@ -596,23 +596,24 @@ input[type=text]:focus{
      
      .dropdown:hover .dropdown_menu .list {
          display: block;
+         width: 100%;
      }
      
-     /* .dropdown_menu {
+     .dropdown_menu {
          position: absolute;
          top:100%;
          width: 100%;
          padding:0;
          opacity:1;
-     } */
+     }
      
-     .list {
+     /* .list {
          display:none;
          color:white;
          background-color:var(--mainColor);
          padding: 10px;
          font-size: 16px;
-        }
+        } */
      
      .dropdown:hover{
          background-color:var(--white);
