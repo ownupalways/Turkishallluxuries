@@ -498,7 +498,7 @@ input[type=text]:focus{
     }
 }
 
-@media (max-width: 700px) {
+@media screen and (max-width: 700px) {
 
     .rowOffIn {
         display: flex;
@@ -547,117 +547,5 @@ input[type=text]:focus{
     .header .icon #menu-btn{
         display: block;
     }
-    .menuBox {
-        width: 250px;
-        display:none;
-        position: absolute;
-        top: 66%;
-        left:0;
-        border: 1px solid var(--mainColor);
-    }
-
-
-    .navbar .menuBox > a{
-        margin: 0;
-        display: block; 
-        width: 100%;
-    }
-
-    .dropdown  {
-        padding: 20px 40px;
-        display: flex;
-        align-content: flex-end;
-        width: 100%;
-        color: white;
-        background: var(--mainColor);
-        position: relative;
-        font-size: 18px;
-     }
-     
-     
-     .dropdown:hover {
-         background: #2980b9;
-         cursor: pointer;
-     }
-     
-     .dropdown:hover .dropdown_menu .list {
-         display: block;
-         width: 100%;
-     }
-     
-     .dropdown_menu {
-         position: absolute;
-         top:100%;
-         width: 100%;
-         padding:0;
-         opacity:1;
-     }
-     
-     /* .list {
-         display:none;
-         color:white;
-         background-color:var(--mainColor);
-         padding: 10px;
-         font-size: 16px;
-        } */
-     
-     .dropdown:hover{
-         background-color:var(--white);
-         color: var(--mainColor);
-         width: 100%;
-     }
-     
-     .dropdown .list {
-         border: 0.5px var(--white) solid;
-     }
-     
-     .dropdown .list:hover {
-         background-color:var(--white);
-     }
-     
-     
-     
-     /*  Menu as a whole animated */
-     .dropdown_menu--animated {
-         display: none;
-     }
-     .dropdown:hover .dropdown_menu--animated{
-         display: block;
-     }
-         
-     li {
-         display: block;
-         opacity: 1;
-     }
-     
-     .dropdown_menu-6 {
-         animation:flapOut 500ms ease-in-out forwards;
-         transform-origin: top center;
-         -webkit-animation:flapOut 500ms ease-in-out forwards;
-     }
-      
-     @keyframes flapOut {
-         0% {
-             transform: rotateX(-45deg);
-             -webkit-transform: rotateX(-45deg);
-             -moz-transform: rotateX(-45deg);
-             -ms-transform: rotateX(-45deg);
-             -o-transform: rotateX(-45deg);
-}
-         70% {
-             transform: rotateX(60deg);
-             -webkit-transform: rotateX(60deg);
-             -moz-transform: rotateX(60deg);
-             -ms-transform: rotateX(60deg);
-             -o-transform: rotateX(60deg);
-}
-         100% {
-             transform: rotateX(00deg);
-             -webkit-transform: rotateX(00deg);
-             -moz-transform: rotateX(00deg);
-             -ms-transform: rotateX(00deg);
-             -o-transform: rotateX(00deg);
-}
-     }
-
+   
 } 
