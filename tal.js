@@ -5,8 +5,9 @@ let closed = document.getElementById('close')
 
 MenuBtn.onclick = () => {
     menu.style.display = "block";
-    closed.style.display ="block"
-    MenuBtn.style.display = "none"
+    menu.style.padding = "0";
+    closed.style.display ="block";
+    MenuBtn.style.display = "none";
 }
 
 closed.onclick = () => {

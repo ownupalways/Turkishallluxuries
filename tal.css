@@ -500,13 +500,6 @@ input[type=text]:focus{
         width:380px;
      }
      
-    .menuBox {
-        display:none;
-        background-color:var(--mainColor);
-        position: absolute;
-        top: 58%;
-        left:1.8%;
-    }
     .navbar .menuBox > a{
         margin: 0;
         display: block;
@@ -562,10 +555,12 @@ input[type=text]:focus{
         display: block;
     }
     .menuBox {
+        width: 250px;
         display:none;
         position: absolute;
         top: 58%;
         left:1.8%;
+        border: 1px solid var(--mainColor);
     }
 
 
@@ -578,16 +573,14 @@ input[type=text]:focus{
     .dropdown  {
         padding: 20px 40px;
         display: flex;
+        align-content: flex-end;
         width: 100%;
-        justify-content: center;
-        align-items: center;
         color: white;
-        /* background: var(--mainColor); */
-        /* position: relative; */
+        background: var(--mainColor);
+        position: relative;
         font-size: 18px;
-        /* perspective: 1000px;
-        z-index: 100; */
      }
+     
      
      .dropdown:hover {
          background: #2980b9;
@@ -626,7 +619,7 @@ input[type=text]:focus{
      }
      
      .dropdown .list:hover {
-         background-color:#2980b9;
+         background-color:var(--white);
      }
      
      
