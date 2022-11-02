@@ -459,7 +459,6 @@ input[type=text]:focus{
         display: block;
         position: absolute;
         top: 90%;
-        left: -150px;
         padding: 0;
         justify-content: center;
         transition: .8s;
