@@ -185,7 +185,7 @@ li {
     padding: 5px;
     text-align: center;
 }
-.header .icon div:hover{
+.header .icon div:hover {
     background: var(--white);
     color: var(--mainColor);
     cursor: pointer;
@@ -196,10 +196,10 @@ li {
     -o-transition: .9s ease-out;
 }
 
-.header .icon #menu-btn{
+.icon {
     display: none;
 }
-.header .icon #close {
+.icon #close {
     display: none;
 }
 
@@ -440,9 +440,7 @@ input[type=text]:focus{
 
 /*responsiveness for header items*/
 @media screen and (max-width: 1000px) {
-    .navbar{
-        display: none;
-    }
+    
     .rowOffIn {
         display: flex;
         flex-wrap: wrap;
@@ -452,6 +450,10 @@ input[type=text]:focus{
         margin: 0 10px;
     }
 
+    .navbar{
+        display: none;
+    }
+    
     .sideOffIn {
         gap: 0;
     }
@@ -474,16 +476,16 @@ input[type=text]:focus{
     }
     .header #search-btn {
         order: 4;
-       right: 0;
-       position: absolute;
-       margin-right: 2rem;
+        right: 0;
+        position: absolute;
+        margin-right: 2rem;
     }
 
     .Scroll-container:hover {
         border: none;
     }
 
-    .header .icon #menu-btn{
+    .icon{
         display: block;
     }
 
@@ -491,14 +493,9 @@ input[type=text]:focus{
         outline:1px solid var(--mainColor);
         width:380px;
      }
-     
-    .navbar .menuBox > a{
-        margin: 0;
-        display: block;
-    }
 }
 
-@media screen and (max-width: 1000px) {
+/* @media screen and (max-width: 1000px) {
     .navbar.responsive {
         position: relative;
     }
@@ -511,13 +508,13 @@ input[type=text]:focus{
         display: block;
 
     }
-}
+} */
 @media screen and (max-width: 700px) {
     .navbar{
         display: none;
     }
 
-    .header .icon #menu-btn{
+    .icon{
         display: block;
     }
 
@@ -566,7 +563,7 @@ input[type=text]:focus{
     }
 } 
 
-@media screen and (max-width: 700px) {
+/* @media screen and (max-width: 700px) {
     .navbar.responsive {
         position: relative;
     }
@@ -579,4 +576,4 @@ input[type=text]:focus{
         display: block;
 
     }
-}
+} */
