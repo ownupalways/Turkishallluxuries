@@ -132,7 +132,7 @@ html{
     display: block;
 }
     
-li {
+a {
     display: block;
     opacity: 1;
 }
@@ -503,6 +503,11 @@ input[type=text]:focus{
     .navbar{
         display: none;
     }
+
+    .header .icon #menu-btn{
+        display: block;
+    }
+
     .rowOffIn {
         display: flex;
         flex-wrap: wrap;
@@ -546,9 +551,19 @@ input[type=text]:focus{
     .Scroll-container:hover {
         border: none;
     }
-
-    .header .icon #menu-btn{
-        display: block;
-    }
-   
 } 
+
+@media screen and (max-width: 700px) {
+    .navbar.responsive {
+        position: relative;
+    }
+    .navbar.responsive .icon {
+        position:absolute;
+    }
+
+    .navbar.responsive a {
+        float: none;
+        display: block;
+
+    }
+}
