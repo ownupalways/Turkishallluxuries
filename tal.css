@@ -37,7 +37,6 @@ html{
 }
 .header{
     width: 100%;
-    height: 10vh;
     display: flex;
     justify-self:center;
     align-items:center;
@@ -442,7 +441,9 @@ input[type=text]:focus{
 
 /*responsiveness for header items*/
 @media (max-width: 1000px) {
-
+    .navbar{
+        display: none;
+    }
     .rowOffIn {
         display: flex;
         flex-wrap: wrap;
@@ -462,6 +463,7 @@ input[type=text]:focus{
 
     .header .fas {
         order: 2;
+        padding-left: 5rem;
     }
 
     .header .navbar {
@@ -470,7 +472,6 @@ input[type=text]:focus{
 
     .header .icon  {
         order: 1;
-        
     }
     .header #search-btn {
         order: 4;
@@ -499,7 +500,9 @@ input[type=text]:focus{
 }
 
 @media screen and (max-width: 700px) {
-
+    .navbar{
+        display: none;
+    }
     .rowOffIn {
         display: flex;
         flex-wrap: wrap;
