@@ -45,15 +45,43 @@
                 display: block;
             }
         }
+        @media screen and (max-width:700px) {
+            .topnav.responsive {
+                position: relative;
+            }
+
+            .topnav.responsive .icon {
+                position: absolute;
+                right: 0;
+                top: 0;
+            }
+
+            .topnav.topnav.responsive a{
+                float: none;
+                display: block;
+                text-align: left;
+            }
+        }
     </style>
 </head>
 <body>
-    <div class="topnav">
+    <div class="topnav" id="myTopnav">
         <a href="#Home" class="active">Home</a>
         <a href="#News">News</a>
         <a href="#Contact">Contact</a>
         <a href="#about">About</a>
         <a href="javascript:void(0);" class="icon" onclick="myFunction"><i class="fa fa-bars"></i></a>
     </div>
+
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+                x.className += " responsive"
+            }else{
+                x.className = "topnav"
+            }
+        }
+    </script>
 </body>
 </html>
