@@ -5,7 +5,7 @@ let closed = document.getElementById('close');
 
 MenuBtn.onclick = () => {
     menu.style.display = "block";
-    menu.style.padding = "0";
+    menu.style.padding = "1px";
     closed.style.display ="block";
     MenuBtn.style.display = "none";
 }
