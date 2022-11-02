@@ -1,7 +1,7 @@
 // Responsive MenuBox
-let menu = document.getElementsByClassName('menuBox')[0];
+let menu = document.getElementsByClassName('navbar')[0];
 let MenuBtn = document.getElementById('menu-btn');
-let closed = document.getElementById('close')
+let closed = document.getElementById('close');
 
 MenuBtn.onclick = () => {
     menu.style.display = "block";
