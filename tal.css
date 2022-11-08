@@ -440,6 +440,7 @@ input[type=text]:focus{
 
 /*responsiveness for header items*/
 @media screen and (max-width: 1000px) {
+
     .dropdown-6 {
         position: relative;
         top: 100%;
@@ -458,15 +459,13 @@ input[type=text]:focus{
         display: none;
     }
     .dropdown:hover .dropdown_menu--animated{
-        display: inline;
-        /* position: absolute;
-        top: 100%; */
+        display: block;
+        position: absolute;
+        top: 100%;
     }
 
     li {
-        position: absolute;
-        top:0;
-        display: inline;
+       display: block;
         width: 100%;
         padding:0;
         opacity:1;
@@ -512,7 +511,6 @@ input[type=text]:focus{
 
     .navbar{
         display: none;
-        /* position: relative; */
     }
     
     .menuBox {
