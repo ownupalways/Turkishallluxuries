@@ -14,7 +14,12 @@ MenuBtn.onclick = () => {
 
 closed.onclick = () => {
     menu.style.display = "none";
-    closed.style.display ="none"
+    closed.style.display ="none";
     MenuBox.style.left = "-150px";
-    MenuBtn.style.display = "block"
+    MenuBtn.style.display = "block";
 }
+// window.onclick = () => {
+//     MenuBox.style.left = "0px";
+//     MenuBtn.style.display = "block";
+//     closed.style.display ="none";
+// }

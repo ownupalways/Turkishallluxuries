@@ -440,6 +440,60 @@ input[type=text]:focus{
 
 /*responsiveness for header items*/
 @media screen and (max-width: 1000px) {
+    .dropdown-6 {
+        position: relative;
+        top: 100%;
+    }
+    
+    .dropdown_menu {
+        position: absolute;
+        top:0;
+        display: inline-block;
+        width: 100%;
+        padding:0;
+        opacity:1;
+    }
+
+    .dropdown_menu--animated {
+        display: none;
+    }
+    .dropdown:hover .dropdown_menu--animated{
+        display: inline-block;
+    }
+
+    li {
+        display: block;
+        opacity: 1;
+    }
+
+    .dropdown_menu-6 {
+        display: inline-block;
+}
+
+    /* @keyframes flapOut {
+        0% {
+            transform: rotateX(-90deg);
+            -webkit-transform: rotateX(-90deg);
+            -moz-transform: rotateX(-90deg);
+            -ms-transform: rotateX(-90deg);
+            -o-transform: rotateX(-90deg);
+        }
+        70% {
+            transform: rotateX(20deg);
+            -webkit-transform: rotateX(20deg) ;
+            -moz-transform: rotateX(20deg) ;
+            -ms-transform: rotateX(20deg) ;
+            -o-transform: rotateX(20deg) ;
+        }
+        100% {
+            transform: rotateX(0deg);
+            -webkit-transform: rotateX(0deg);
+            -moz-transform: rotateX(0deg);
+            -ms-transform: rotateX(0deg);
+            -o-transform: rotateX(0deg);
+        }
+    } */
+    
     
     .rowOffIn {
         display: flex;
@@ -460,6 +514,7 @@ input[type=text]:focus{
         position: absolute;
         top: 90%;
         padding: 0;
+        right: 0;
         justify-content: center;
         transition: .8s;
         -webkit-transition: .8s;
