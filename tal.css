@@ -448,7 +448,7 @@ input[type=text]:focus{
     .dropdown_menu {
         position: absolute;
         top:0;
-        display: inline-block;
+        display: inline;
         width: 100%;
         padding:0;
         opacity:1;
@@ -458,16 +458,22 @@ input[type=text]:focus{
         display: none;
     }
     .dropdown:hover .dropdown_menu--animated{
-        display: inline-block;
+        display: inline;
+        /* position: absolute;
+        top: 100%; */
     }
 
     li {
-        display: block;
-        opacity: 1;
+        position: absolute;
+        top:0;
+        display: inline;
+        width: 100%;
+        padding:0;
+        opacity:1;
     }
 
     .dropdown_menu-6 {
-        display: inline-block;
+        display: block;
 }
 
     /* @keyframes flapOut {
