@@ -46,7 +46,6 @@ html{
     box-shadow: var(--box-shadow);
     z-index: 1000;
     position: fixed;
-
 }
 
 .navbar {
@@ -440,10 +439,16 @@ input[type=text]:focus{
 
 /*responsiveness for header items*/
 @media screen and (max-width: 1000px) {
-
+    .dropdown {
+        z-index: 0;
+        justify-content: left;
+        align-content: center;
+        border: 1px solid white;
+    }
     .dropdown-6 {
         position: relative;
         top: 100%;
+        z-index: 111;
     }
     
     .dropdown_menu {
@@ -453,6 +458,7 @@ input[type=text]:focus{
         width: 100%;
         padding:0;
         opacity:1;
+        
     }
 
     .dropdown_menu--animated {
@@ -504,7 +510,7 @@ input[type=text]:focus{
         display: flex;
         flex-wrap: wrap;
         width:100%;
-        padding:19rem 20px 0 20px;
+        padding:10rem 20px 0 20px;
         align-content: center;
         margin: 0 10px;
     }
@@ -516,6 +522,7 @@ input[type=text]:focus{
     .menuBox {
         display: block;
         position: absolute;
+        width: 100%;
         top: 90%;
         padding: 0;
         right: 0;
