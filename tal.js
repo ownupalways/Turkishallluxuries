@@ -23,3 +23,17 @@ closed.onclick = () => {
 //     MenuBtn.style.display = "block";
 //     closed.style.display ="none";
 // }
+
+let arrowHead = document.getElementsByClassName('arrowMove') 
+console.log(arrowHead)
+
+// arrowHead.addEventListener('hover', () => {
+//     StopArrow()
+// })
+
+// function StopArrow() {
+//     arrowHead
+//     if (condition) {
+        
+//     }
+// }

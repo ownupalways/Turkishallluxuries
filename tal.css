@@ -354,6 +354,7 @@ input[type=text]:focus{
     flex: 20%;
     display: flex;
     gap: 10px;
+    padding:.5rem 5px ;
 }
 
 .bestPrice {
@@ -505,12 +506,25 @@ input[type=text]:focus{
         }
     } */
     
+    .header{
+        width: 100%;
+        display: flex;
+        justify-self:center;
+        align-items:center;
+        flex-wrap: wrap;
+        padding: 2rem 1rem;
+        background-color:var(--background);
+        box-shadow: var(--box-shadow);
+        z-index: 1000;
+        position: fixed;
+    
+    }
     
     .rowOffIn {
         display: flex;
         flex-wrap: wrap;
         width:100%;
-        padding:10rem 20px 0 20px;
+        padding:8rem 20px 0 20px;
         align-content: center;
         margin: 0 10px;
     }
@@ -535,6 +549,7 @@ input[type=text]:focus{
     }
     .sideOffIn {
         gap: 0;
+        padding:8rem 0px 0 0px;
     }
 
     html{
@@ -608,6 +623,7 @@ input[type=text]:focus{
 
     .sideOffIn {
         gap: 0;
+        padding:8rem 0 0 0;
     }
 
     html{
