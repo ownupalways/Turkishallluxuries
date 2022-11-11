@@ -18,22 +18,3 @@ closed.onclick = () => {
     MenuBox.style.left = "-150px";
     MenuBtn.style.display = "block";
 }
-// window.onclick = () => {
-//     MenuBox.style.left = "0px";
-//     MenuBtn.style.display = "block";
-//     closed.style.display ="none";
-// }
-
-let arrowHead = document.getElementsByClassName('arrowMove') 
-console.log(arrowHead)
-
-// arrowHead.addEventListener('hover', () => {
-//     StopArrow()
-// })
-
-// function StopArrow() {
-//     arrowHead
-//     if (condition) {
-        
-//     }
-// }
