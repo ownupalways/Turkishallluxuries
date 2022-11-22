@@ -12,6 +12,7 @@
     -ms-transition: all .2s linear;
     -o-transition: all .2s linear;
 }
+
 :root{
     --white:#fff;
     --onion: purple;
@@ -303,7 +304,10 @@ input[type=text]:focus{
 
 #card:hover .info {
     left:0;
-    animation-play-state:paused;
+    
+    &  i {
+        animation-play-state:paused;
+    }
 }
 
 .info i {
@@ -319,9 +323,6 @@ input[type=text]:focus{
     to {opacity: 1;}
 }
 
-@keyframes moveOne {
-    
-}
 .Scroll-container #card .clear{
     float: left;
     margin: 5px 5px 5px 8px;
