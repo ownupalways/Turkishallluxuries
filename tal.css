@@ -19,7 +19,7 @@
     --blue:rgb(33, 0, 221);
     --black:black;
     --box-shadow: 6px 2px 8px rgb(8, 4, 4);
-    --background:rgba(219, 170, 170, 0.6);
+    --background:rgba(219, 170, 170, 1);
     --background_page: rgb(122, 112, 123);
     --general_btn:rgb(88, 20, 88);
     --overCard:rgba(7, 6, 6, 0.5);
@@ -65,6 +65,8 @@ html{
     font-weight: bolder;
     margin-right: 12rem;
 } 
+
+
 /**********MENU STYLING**********/
 .menuBox {
     display: flex;
@@ -77,10 +79,11 @@ html{
    width: 200px;
    justify-content: center;
    align-items: center;
-   color: white;
-   background: var(--mainColor);
+   color: var(--onion);
+   /* background: var(--mainColor); */
    position: relative;
    font-size: 18px;
+   font-weight: bold;
    perspective: 1000px;
    z-index: 100;
 }
@@ -88,6 +91,7 @@ html{
 .dropdown:hover {
     background: #2980b9;
     cursor: pointer;
+    color: #ffff;
 }
 
 .dropdown:hover .dropdown_menu .list {
@@ -170,7 +174,7 @@ li {
     z-index: 1000;
     position:absolute;
     left: 0;
-    color:var(--white);
+    /* color:var(--white); */
     font-size: 2rem;
     text-align: center;
 }
@@ -202,6 +206,10 @@ li {
 .icon #close {
     display: none;
 }
+
+/*****************************************************/
+        /*SEARCH SPACE*/
+/*****************************************************/
 
 input[type=text] {
     width: 110px;
@@ -239,13 +247,14 @@ input[type=text]:focus{
 }
 
 
-/******Scrolling Image on Homepage******/
+/******SCROLLING IMAGE ON HOME PAGE******/
 .Scroll-container{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    margin:2rem 4rem ;
+    margin:2rem 3rem ;
+    padding: 15px 0;
     border-radius: 5px;
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
@@ -253,8 +262,27 @@ input[type=text]:focus{
     -o-border-radius: 5px;
 }
 
+#card{
+    position: relative;
+    /* overflow: hidden; */
+    margin:5px 18px;
+    max-width: 200px;
+    border-radius: 8px 8px 6px 6px;
+    box-shadow: var(--box-shadow);
+    -webkit-border-radius: 8px 8px 6px 6px;
+    -ms-border-radius: 8px 8px 6px 6px;
+    -o-border-radius: 8px 8px 6px 6px;
+    background-color: #fff;
+    -moz-border-radius: 8px 8px 6px 6px;
+}
+
+.Scroll-container #card .image-setting {
+    width: 210px;
+    height: 170px;
+}
+
 .ScrollTab:hover {
-    border: 1px solid var(--mainColor);
+    box-shadow: 2px 4px 6px 4px rgba(0, 0, 0, 0.3);
     transition: .8s;
     -webkit-transition: .8s;
     -moz-transition: .8s;
@@ -268,32 +296,19 @@ input[type=text]:focus{
     text-align: center;
 }
 
-#card{
-    position: relative;
-    overflow: hidden;
-    margin:10px;
-    width: 200px;
-    border-radius: 8px 8px 6px 6px;
-    box-shadow: var(--box-shadow);
-    -webkit-border-radius: 8px 8px 6px 6px;
-    -ms-border-radius: 8px 8px 6px 6px;
-    -o-border-radius: 8px 8px 6px 6px;
-    background-color: #fff;
-    -moz-border-radius: 8px 8px 6px 6px;
-}
-.Scroll-container #card .shop-image{
-    width: 100%;
-}
-
-/***************Home page image Info****************/
+/*************** HONE PAGE ITEMS ****************/
 .Scroll-container .info {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    padding: 10px;
     position:absolute;
     bottom:0;
-    left: -90%;
+    left: -100%;
     width:100%;
     height: 100%;
-    display: grid;
-    align-items: flex-end;
+    /* display: grid;
+    align-items: flex-end; */
     background-color:var(--overCard);
     transition: .8s;
     -webkit-transition: .8s;
@@ -309,13 +324,46 @@ input[type=text]:focus{
         animation-play-state:paused;
     }
 }
+.info h3 {
+    color: var(--white);
+}
 
-.info i {
-    font-size: 15px;
+.info .more_action {
+    border: 1px solid white;
+}
+.info .Payment {
+    color: var(--white);
+    font-size: 18px;
     padding-left: 92%;
     padding-top: 35px;
     animation:moveOn 2s infinite;
     -webkit-animation:moveOn 2s infinite;
+}
+
+.info .product_glance {
+    width: 190px;
+    height: 35px;
+    color: var(--white);
+    font-size: 13px;
+    padding: 0 2px;
+}
+.info .more_view {
+    width: 60px;
+    height:25px;
+    font-size: 10px;
+    padding: 2px 1px;
+    border-radius: 4px;
+    outline: none;
+    box-shadow: 2px 4px rgba(243, 243, 243, 0.3);
+    /* display: none; */
+    transition: all 0.5s ease-in;
+}
+
+.info .more_view:hover {
+    cursor: pointer;
+    color: var(--white);
+    background: var(--black);
+    box-shadow: 1px 1px rgb(243, 243, 243);
 }
 
 @keyframes moveOn {
@@ -323,123 +371,107 @@ input[type=text]:focus{
     to {opacity: 1;}
 }
 
-.Scroll-container #card .clear{
-    float: left;
-    margin: 5px 5px 5px 8px;
-    font-size: 15px;
-    color: var(--black);
+.info .clear{
+    /* margin: 5px 5px 5px 8px; */
+    font-size: 12px;
+    color: var(--white);
     font-weight: bolder;
     padding-bottom: 5px;
 }
-.Scroll-container #card .image-setting {
-    border-radius: 8px 8px 0 0;
-    height: 200px;
-    width: 100%;
-    -webkit-border-radius: 8px 8px 0 0;
-    -moz-border-radius: 8px 8px 0 0;
-    -ms-border-radius: 8px 8px 0 0;
-    -o-border-radius: 8px 8px 0 0;
-}
 
-/* Index page Layout */
+
+/****** INDEX PAGE LAYOUT *******/
 .rowOffIn {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    padding-top: 12.5rem;
-    align-items: center;
-}
-.main {
-    flex: 70%;
+    padding-top: 10rem;
+    height: 180vh;
 }
 
-.sideOffIn {
+footer {
+    background: var(--mainColor);
+    width: 100%;
+    bottom: -25%;
+    position: fixed;
+    transition: all 0.8s ease;
+}
+
+footer:hover {
+    bottom: 0;
+}
+.content-wrapper {
     display: flex;
-    flex-wrap: wrap;
-    flex: 20%;
-    display: flex;
-    gap: 10px;
-    padding:.5rem 5px ;
-}
-
-.bestPrice {
-    margin: 15px 10px;
-    padding:15px;
-    background-color: var(--mainColor);
     color: var(--white);
-    width: 100%;
-    line-height: 3;
     font-size: 18px;
-    border-radius: 6px;
-    -webkit-border-radius: 6px;
-    -moz-border-radius: 6px;
-    -ms-border-radius: 6px;
-    -o-border-radius: 6px;
-}
-.bestPrice:hover {
-    box-shadow: 4px 1.5px 4px 1.5px rgb(212, 212, 212);
+    padding: 15px 5px;
 }
 
-.phoneCall {
-    width: 180px;
-    color: white;
-    border: 0.5px var( --white) solid;
-    border-radius: 4px;
-    padding: 10px;
-    -webkit-border-radius: 4px;
-    -moz-border-radius: 4px;
-    -ms-border-radius: 4px;
-    -o-border-radius: 4px;
+.footer_tabs {
+    width: 25%;
+    padding: 0 15px;
 }
 
-.phoneCall:hover {
-    background-color: rgb(21, 21, 24);
-}
-.media {
-    margin: 15px 10px;
-    padding:15px;
-    background-color: var(--mainColor);
-    width: 100%;
+.footer_tabs  h4 {
     font-size: 18px;
-    border-radius: 6px;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+    font-weight: 500;
+    position: relative;
 }
 
-.address {
-    margin: 15px 10px;
-    padding:15px;
-    background-color: var(--mainColor);
-    color: var(--white);
-    width: 100%;
+.footer_tabs h4::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    background-color: var(--background);
+    height: 2px;
+    box-sizing: border-box;
+    width: 40px;
+}
+
+.footer_tabs ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 10px;
+}
+
+.footer_tabs ul li a {
     line-height: 1.5;
-    font-size: 18px;
-    border-radius: 6px;
+    color: var(--white);
+    font-size: 15px;
+    transition: all 0.3s ease;
 }
-.address div i {
-    margin: 0 8px 8px 0;
+
+.footer_tabs ul li a:hover {
+    opacity: 0.5;
+    word-spacing: 2px;
+    letter-spacing: 2px;
 }
+
 .copyright {
     font-size: 15px;
     width: 100%;
-    margin-bottom: 0;
-    margin: 15px 10px;
-    padding:15px;
-    background-color: var(--mainColor);
     color: var(--white);
-    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    padding: 0 25px 12px;
 }
 
-.cont {
-    margin: 10px 0;
-    font-size: 18px;
+.footer_tabs .socialMedia_container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    font-size: 35px;
     color: var(--white);
-    opacity: .6;
 }
-.cont:hover {
-   opacity: 1;
-   font-weight: bolder;
-}
-.cont i {
-    margin: 10px;
+
+.footer_tabs .socialMedia_container .cont:hover {
+    font-size: 30px;
+    opacity: 0.5;
+    cursor: pointer;
 }
 
 
@@ -464,7 +496,6 @@ input[type=text]:focus{
         width: 100%;
         padding:0;
         opacity:1;
-        
     }
 
     .dropdown_menu--animated {
@@ -487,29 +518,29 @@ input[type=text]:focus{
         display: block;
 }
 
-    /* @keyframes flapOut {
-        0% {
-            transform: rotateX(-90deg);
-            -webkit-transform: rotateX(-90deg);
-            -moz-transform: rotateX(-90deg);
-            -ms-transform: rotateX(-90deg);
-            -o-transform: rotateX(-90deg);
-        }
-        70% {
-            transform: rotateX(20deg);
-            -webkit-transform: rotateX(20deg) ;
-            -moz-transform: rotateX(20deg) ;
-            -ms-transform: rotateX(20deg) ;
-            -o-transform: rotateX(20deg) ;
-        }
-        100% {
-            transform: rotateX(0deg);
-            -webkit-transform: rotateX(0deg);
-            -moz-transform: rotateX(0deg);
-            -ms-transform: rotateX(0deg);
-            -o-transform: rotateX(0deg);
-        }
-    } */
+/* @keyframes flapOut {
+    0% {
+        transform: rotateX(-90deg);
+        -webkit-transform: rotateX(-90deg);
+        -moz-transform: rotateX(-90deg);
+        -ms-transform: rotateX(-90deg);
+        -o-transform: rotateX(-90deg);
+    }
+    70% {
+        transform: rotateX(20deg);
+        -webkit-transform: rotateX(20deg) ;
+        -moz-transform: rotateX(20deg) ;
+        -ms-transform: rotateX(20deg) ;
+        -o-transform: rotateX(20deg) ;
+    }
+    100% {
+        transform: rotateX(0deg);
+        -webkit-transform: rotateX(0deg);
+        -moz-transform: rotateX(0deg);
+        -ms-transform: rotateX(0deg);
+        -o-transform: rotateX(0deg);
+    }
+} */
     
     .header{
         width: 100%;
@@ -552,10 +583,10 @@ input[type=text]:focus{
         -ms-transition: .8s;
         -o-transition: .8s;
     }
-    .sideOffIn {
+    /* .sideOffIn {
         gap: 0;
         padding:8rem 0px 0 0px;
-    }
+    } */
 
     html{
         font-size: 55%;
@@ -626,10 +657,10 @@ input[type=text]:focus{
         margin: 0 10px;
     }
 
-    .sideOffIn {
+    /* .sideOffIn {
         gap: 0;
         padding:8rem 0 0 0;
-    }
+    } */
 
     html{
         font-size: 55%;
