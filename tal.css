@@ -33,14 +33,11 @@ html {
     scroll-padding-top: 7rem;
 }
 
-/* .body-things {
-    position: relative;
-} */
-
 .background {
     background: rgba(7, 3, 3, 0.808);
 }
 
+/******* HEADER ICONS ********/
 .header {
     width: 100%;
     display: flex;
@@ -54,13 +51,13 @@ html {
     position: fixed;
 }
 
-.navbar {
+.header .navbar {
     display: flex;
     justify-content: center;
     align-self: center;
 }
 
-#search-btn {
+.header #search-btn {
     z-index: 1000;
     position: absolute;
     right: 10%;
@@ -72,6 +69,50 @@ html {
     margin-right: 12rem;
 }
 
+.header .icon {
+    z-index: 1000;
+    position: absolute;
+    left: 0;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.header .icon div {
+    height: 5rem;
+    width: 5rem;
+    /* line-height: 3.5rem; */
+    background: var(--mainColor);
+    color: var(--white);
+    font-size: 4rem;
+    padding: 5px;
+    text-align: center;
+}
+
+.header .icon div:hover {
+    background: var(--white);
+    color: var(--mainColor);
+    cursor: pointer;
+    transition: .9s ease-out;
+    -webkit-transition: .9s ease-out;
+    -moz-transition: .9s ease-out;
+    -ms-transition: .9s ease-out;
+    -o-transition: .9s ease-out;
+}
+
+.header .icon {
+    display: flex;
+}
+
+.header .icon #close {
+    display: none;
+}
+
+.header .icon .fasBtn {
+    display: block;
+    order: 2;
+    /* padding-left: 5rem; */
+}
+
 
 /**********MENU STYLING**********/
 .menuBox {
@@ -80,19 +121,22 @@ html {
 }
 
 .dropdown {
-    padding: 20px 40px;
+    position: relative;
+    padding: 15px 25px;
     display: flex;
-    width: 200px;
+    width: 150px;
     justify-content: center;
+    margin-right: 5px;
     align-items: center;
     color: var(--onion);
     /* background: var(--mainColor); */
-    position: relative;
     font-size: 18px;
     font-weight: bold;
     perspective: 1000px;
     z-index: 100;
+    border-radius: 5px;
 }
+
 
 .dropdown:hover {
     background: #2980b9;
@@ -106,7 +150,7 @@ html {
 
 .dropdown_menu {
     position: absolute;
-    top: 100%;
+    top: 90%;
     width: 100%;
     padding: 0;
     opacity: 1;
@@ -179,45 +223,6 @@ li {
     }
 }
 
-.header .icon {
-    z-index: 1000;
-    position: absolute;
-    left: 0;
-    /* color:var(--white); */
-    font-size: 2rem;
-    text-align: center;
-}
-
-.header .icon div {
-    height: 5rem;
-    width: 5rem;
-    line-height: 3.5rem;
-    background: var(--mainColor);
-    color: var(--white);
-    font-size: 4rem;
-    padding: 5px;
-    text-align: center;
-}
-
-.header .icon div:hover {
-    background: var(--white);
-    color: var(--mainColor);
-    cursor: pointer;
-    transition: .9s ease-out;
-    -webkit-transition: .9s ease-out;
-    -moz-transition: .9s ease-out;
-    -ms-transition: .9s ease-out;
-    -o-transition: .9s ease-out;
-}
-
-.icon {
-    display: none;
-}
-
-.icon #close {
-    display: none;
-}
-
 /*****************************************************/
 /*SEARCH SPACE*/
 /*****************************************************/
@@ -251,7 +256,7 @@ input[type=text]:focus {
     width: 380px;
 }
 
-.search-btn:hover {
+.header .search-btn:hover {
     cursor: pointer;
 }
 
@@ -272,7 +277,7 @@ input[type=text]:focus {
     -o-border-radius: 5px;
 }
 
-#card {
+.Scroll-container .card {
     position: relative;
     overflow: hidden;
     margin: 5px 18px;
@@ -286,12 +291,12 @@ input[type=text]:focus {
     -moz-border-radius: 8px 8px 6px 6px;
 }
 
-.Scroll-container #card .image-setting {
+.Scroll-container .card .image-setting {
     width: 210px;
     height: 170px;
 }
 
-.ScrollTab:hover {
+.Scroll-container:hover {
     box-shadow: 2px 4px 6px 4px rgba(0, 0, 0, 0.3);
     transition: .8s;
     -webkit-transition: .8s;
@@ -300,14 +305,14 @@ input[type=text]:focus {
     -o-transition: .8s;
 }
 
-.ScrollTab .lableIn {
+.Scroll-container .lableIn {
     width: 150px;
     font-size: 18px;
     text-align: center;
 }
 
 /*************** HONE PAGE ITEMS ****************/
-.Scroll-container .info {
+.Scroll-container .card .info {
     display: flex;
     flex-direction: column;
     gap: 4px;
@@ -318,8 +323,6 @@ input[type=text]:focus {
     left: -100%;
     width: 100%;
     height: 100%;
-    /* display: grid;
-    align-items: flex-end; */
     background-color: var(--overCard);
     transition: .8s;
     -webkit-transition: .8s;
@@ -328,7 +331,7 @@ input[type=text]:focus {
     -o-transition: .8s;
 }
 
-#card:hover .info {
+.Scroll-container .card:hover .info {
     left: 0;
 
     & .arrow {
@@ -336,7 +339,7 @@ input[type=text]:focus {
     }
 }
 
-.info h3 {
+.info h3,h2 {
     color: var(--white);
     position: relative;
     margin-bottom: 2px;
@@ -360,7 +363,7 @@ input[type=text]:focus {
 }
 
 .info .product_glance {
-    width: 190px;
+    width: 100%;
     height: 20px;
     color: var(--white);
     font-size: 13px;
@@ -493,9 +496,6 @@ input[type=text]:focus {
 
 /****** INDEX PAGE LAYOUT *******/
 .rowOffIn {
-    /* display: flex;
-    flex-wrap: wrap;
-    justify-content: center; */
     padding-top: 10rem;
     height: 180vh;
 }
@@ -632,30 +632,6 @@ footer:hover {
         display: block;
     }
 
-    /* @keyframes flapOut {
-    0% {
-        transform: rotateX(-90deg);
-        -webkit-transform: rotateX(-90deg);
-        -moz-transform: rotateX(-90deg);
-        -ms-transform: rotateX(-90deg);
-        -o-transform: rotateX(-90deg);
-    }
-    70% {
-        transform: rotateX(20deg);
-        -webkit-transform: rotateX(20deg) ;
-        -moz-transform: rotateX(20deg) ;
-        -ms-transform: rotateX(20deg) ;
-        -o-transform: rotateX(20deg) ;
-    }
-    100% {
-        transform: rotateX(0deg);
-        -webkit-transform: rotateX(0deg);
-        -moz-transform: rotateX(0deg);
-        -ms-transform: rotateX(0deg);
-        -o-transform: rotateX(0deg);
-    }
-} */
-
     .header {
         width: 100%;
         display: flex;
@@ -679,7 +655,7 @@ footer:hover {
         margin: 0 10px;
     }
 
-    .navbar {
+    .header .navbar {
         display: none;
     }
 
@@ -697,11 +673,6 @@ footer:hover {
         -ms-transition: .8s;
         -o-transition: .8s;
     }
-
-    /* .sideOffIn {
-        gap: 0;
-        padding:8rem 0px 0 0px;
-    } */
 
     html {
         font-size: 55%;
@@ -765,8 +736,6 @@ footer:hover {
     }
 
     .rowOffIn {
-        /* display: flex;
-        flex-wrap: wrap; */
         width: 100%;
         padding: 19rem 20px 0 20px;
         align-content: center;
