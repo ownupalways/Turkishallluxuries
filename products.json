@@ -23,9 +23,7 @@
             "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolor amet iusto ab ut repellat ipsum nostrum. Temporibus sapiente molestiae fuga neque nostrum provident dolores culpa! Delectus ut minus hic consectetur!",
             "price": 200,
             "glance": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolor amet iusto ab ut repellat ipsum nostrum..."
-        }
-    ],
-    [
+        },
         {
             "id": 4,
             "name": "Dinning Ash",
@@ -33,7 +31,9 @@
             "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolor amet iusto ab ut repellat ipsum nostrum. Temporibus sapiente molestiae fuga neque nostrum provident dolores culpa! Delectus ut minus hic consectetur!",
             "price": 200,
             "glance": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolor amet iusto ab ut repellat ipsum nostrum..."
-        },
+        }
+    ],
+    [
         {
             "id": 5,
             "name": "Dinning Crown",
@@ -49,10 +49,7 @@
             "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolor amet iusto ab ut repellat ipsum nostrum. Temporibus sapiente molestiae fuga neque nostrum provident dolores culpa! Delectus ut minus hic consectetur!",
             "price": 200,
             "glance": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolor amet iusto ab ut repellat ipsum nostrum..."
-        }
-    ],
-    
-    [
+        },
         {
             "id": 7,
             "name": "Dinning Green",
@@ -68,7 +65,10 @@
             "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolor amet iusto ab ut repellat ipsum nostrum. Temporibus sapiente molestiae fuga neque nostrum provident dolores culpa! Delectus ut minus hic consectetur!",
             "price": 200,
             "glance": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolor amet iusto ab ut repellat ipsum nostrum..."
-        },
+        }
+    ],
+    
+    [
         {
             "id": 9,
             "name": "Living Room Classic",
@@ -76,9 +76,7 @@
             "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolor amet iusto ab ut repellat ipsum nostrum. Temporibus sapiente molestiae fuga neque nostrum provident dolores culpa! Delectus ut minus hic consectetur!",
             "price": 200,
             "glance": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolor amet iusto ab ut repellat ipsum nostrum..."
-        }
-    ],
-    [
+        },
         {
             "id": 10,
             "name": "Living Room Exotic",
@@ -128,9 +126,7 @@
             "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolor amet iusto ab ut repellat ipsum nostrum. Temporibus sapiente molestiae fuga neque nostrum provident dolores culpa! Delectus ut minus hic consectetur!",
             "price": 200,
             "glance": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolor amet iusto ab ut repellat ipsum nostrum..."
-        }
-    ],
-    [
+        },
         {
             "id": 16,
             "name": "single couch",
@@ -138,7 +134,9 @@
             "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolor amet iusto ab ut repellat ipsum nostrum. Temporibus sapiente molestiae fuga neque nostrum provident dolores culpa! Delectus ut minus hic consectetur!",
             "price": 200,
             "glance": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolor amet iusto ab ut repellat ipsum nostrum..."
-        },
+        }
+    ],
+    [
         {
             "id": 17,
             "name": "single couch",
@@ -154,10 +152,7 @@
             "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolor amet iusto ab ut repellat ipsum nostrum. Temporibus sapiente molestiae fuga neque nostrum provident dolores culpa! Delectus ut minus hic consectetur!",
             "price": 200,
             "glance": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolor amet iusto ab ut repellat ipsum nostrum..."
-        }
-    ],
-
-    [
+        },
         {
             "id": 19,
             "name": "single couch",
@@ -173,7 +168,10 @@
             "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolor amet iusto ab ut repellat ipsum nostrum. Temporibus sapiente molestiae fuga neque nostrum provident dolores culpa! Delectus ut minus hic consectetur!",
             "price": 200,
             "glance": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolor amet iusto ab ut repellat ipsum nostrum..."
-        },
+        }
+    ],
+
+    [
         {
             "id": 21,
             "name": "single couch",
@@ -181,9 +179,7 @@
             "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolor amet iusto ab ut repellat ipsum nostrum. Temporibus sapiente molestiae fuga neque nostrum provident dolores culpa! Delectus ut minus hic consectetur!",
             "price": 200,
             "glance": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolor amet iusto ab ut repellat ipsum nostrum..."
-        }
-    ],
-    [
+        },
         {
             "id": 22,
             "name": "single couch",
@@ -234,10 +230,7 @@
             "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolor amet iusto ab ut repellat ipsum nostrum. Temporibus sapiente molestiae fuga neque nostrum provident dolores culpa! Delectus ut minus hic consectetur!",
             "price": 200,
             "glance": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolor amet iusto ab ut repellat ipsum nostrum..."
-        }
-    ],
-
-    [
+        },
         {
             "id": 28,
             "name": "single couch",
@@ -245,15 +238,10 @@
             "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolor amet iusto ab ut repellat ipsum nostrum. Temporibus sapiente molestiae fuga neque nostrum provident dolores culpa! Delectus ut minus hic consectetur!",
             "price": 200,
             "glance": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolor amet iusto ab ut repellat ipsum nostrum..."
-        },
-        {
-            "id": 1,
-            "name": "single couch",
-            "image": "image/single couch.jpg",
-            "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolor amet iusto ab ut repellat ipsum nostrum. Temporibus sapiente molestiae fuga neque nostrum provident dolores culpa! Delectus ut minus hic consectetur!",
-            "price": 200,
-            "glance": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolor amet iusto ab ut repellat ipsum nostrum..."
-        },
+        }
+    ],
+
+    [
         {
             "id": 29,
             "name": "single couch",
@@ -261,10 +249,7 @@
             "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolor amet iusto ab ut repellat ipsum nostrum. Temporibus sapiente molestiae fuga neque nostrum provident dolores culpa! Delectus ut minus hic consectetur!",
             "price": 200,
             "glance": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolor amet iusto ab ut repellat ipsum nostrum..."
-        }
-    ],
-
-    [
+        },
         {
             "id": 30,
             "name": "single couch",
@@ -283,6 +268,14 @@
         },
         {
             "id": 32,
+            "name": "single couch",
+            "image": "image/single couch.jpg",
+            "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolor amet iusto ab ut repellat ipsum nostrum. Temporibus sapiente molestiae fuga neque nostrum provident dolores culpa! Delectus ut minus hic consectetur!",
+            "price": 200,
+            "glance": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolor amet iusto ab ut repellat ipsum nostrum..."
+        },
+        {
+            "id": 33,
             "name": "single couch",
             "image": "image/single couch.jpg",
             "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolor amet iusto ab ut repellat ipsum nostrum. Temporibus sapiente molestiae fuga neque nostrum provident dolores culpa! Delectus ut minus hic consectetur!",

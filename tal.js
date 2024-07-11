@@ -60,78 +60,81 @@ function removeModalBox(event) {
 }
 
 // Responsive MenuBox
-let menu = document.getElementsByClassName('navbar')[0];
-let MenuBox = document.getElementsByClassName('menuBox')[0]
-let MenuBtn = document.getElementById('menu-btn');
-let closed = document.getElementById('close');
+let  MenuBtn= document.querySelector('.fa-bars')
+let MenuBox = document.querySelector('.menuBox');
+let closed = document.querySelector('.fa-window-close');
 
-MenuBtn.onclick = () => {
-    menu.style.display = "block";
-    menu.style.padding = "1px";
-    MenuBox.style.left = "0px";
-    closed.style.display ="block";
-    MenuBtn.style.display = "none";
+
+MenuBtn.addEventListener('click', openMenu)
+closed.addEventListener('click', closeMenu)
+
+
+function openMenu() {
+    // menuBntClicked = event.target
+    MenuBtn.style.display = 'none'
+    MenuBox.style.left = '0'
+    closed.style.display = 'block'
 }
 
-closed.onclick = () => {
-    menu.style.display = "none";
-    closed.style.display ="none";
-    MenuBox.style.left = "-150px";
-    MenuBtn.style.display = "block";
+function closeMenu() {
+    // closedBtnClicked =event.target
+    MenuBox.style.left = '-100%'
+    MenuBtn.style.display = 'block'
+    closed.style.display = 'none'
 }
 
 // MODAL BOX DISPLAY OPERATION
 
-let viewBtn = document.getElementById('details')
+// let viewBtn = document.getElementById('details')
 
-let purchaseBtn = document.getElementById('purchase')
+// let purchaseBtn = document.getElementById('purchase')
 
 
-viewBtn.addEventListener('click', mobilePage)
+// viewBtn.addEventListener('click', mobilePage)
 
-function mobilePage() {
-    let displayModalBox = document.createElement('div')
-    displayModalBox.classList.add('modalBoxForEachImage')
+// function mobilePage() {
+//     let displayModalBox = document.createElement('div')
+//     displayModalBox.classList.add('modalBoxForEachImage')
 
-    let Box = document.getElementsByClassName('rowOffIn')[0];
+//     let Box = document.getElementsByClassName('rowOffIn')[0];
    
-   let myModalBox =`
-    <div id = "modalBox">
-        <div class="innerModalBox">
-            <span><i class="fa-solid fa-xmark closeMe"></i></span>
-            <div class="imageItem">
-                <img src="talsingle/single couch.jpg" alt="">
-            </div>
-            <div class="actionDecision">
-                <table>
-                    <tr>
-                        <td>Product Name:</td>
-                        <td>Single Couch</td>
-                    </tr>
-                    <tr>
-                        <td>Description:</td>
-                        <td class="description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolor amet iusto ab ut repellat ipsum nostrum. Temporibus sapiente molestiae fuga neque nostrum provident dolores culpa! Delectus ut minus hic consectetur!</td>
-                    </tr>
-                    <tr>
-                        <td>Price:</td>
-                        <td>$200</td>
-                    </tr>
-                    <tr>
-                        <td></td>
-                        <td class="btnContainer">
-                            <button class="addToCart btn"> Add to Cart
-                            </button>
-                            <button class="purchaseNow btn">
-                                Purchase Now
-                            </button>
-                        </td>
-                    </tr>
-                </table>
-            </div>
-        </div>
-    </div>`;
-    Box.append(displayModalBox)
-    displayModalBox.innerHTML = myModalBox;
+//    let myModalBox =`
+//     <div id = "modalBox">
+//         <div class="innerModalBox">
+//             <span><i class="fa-solid fa-xmark closeMe"></i></span>
+//             <div class="imageItem">
+//                 <img src="${product.image}" alt="">
+//             </div>
+//             <div class="actionDecision">
+//                 <table>
+//                     <tr>
+//                         <td>${product.name}</td>
+//                         <td>Single Couch</td>
+//                     </tr>
+//                     <tr>
+//                         <td>Description:</td>
+//                         <td class="description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolor amet iusto ab ut repellat ipsum nostrum. Temporibus sapiente molestiae fuga neque nostrum provident dolores culpa! Delectus ut minus hic consectetur!</td>
+//                     </tr>
+//                     <tr>
+//                         <td>Price:</td>
+//                         <td>$200</td>
+//                     </tr>
+//                     <tr>
+//                         <td></td>
+//                         <td class="btnContainer">
+//                             <button class="addToCart btn"> Add to Cart
+//                             </button>
+//                             <button class="purchaseNow btn">
+//                                 Purchase Now
+//                             </button>
+//                         </td>
+//                     </tr>
+//                 </table>
+//             </div>
+//         </div>
+//     </div>`;
+//     Box.append(displayModalBox)
+//     displayModalBox.innerHTML = myModalBox;
 
-    displayModalBox.getElementsByClassName('closeMe')[0].addEventListener('click', removeModalBox )
-}
+//     displayModalBox.getElementsByClassName('closeMe')[0].addEventListener('click', removeModalBox )
+// }

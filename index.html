@@ -6,40 +6,59 @@
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
         <link rel="stylesheet" href="tal.css">
-        <script src="tal.js" defer></script>
         <title>Turkish All Luxuries</title>
     </head>
     <body class="body-things">
         <header class="header">
-            <div class="menuLogo">
-                <div class="fas fa-bars fasBtn" id="menu-btn"></div>
-                <a href="index.html" class="logo">Parking</a></div>
-            <div class="navbar">
+            <!-- MENU SECTION -->
+            <nav class="navbar">
+               <div class="responsiveMenuBtn">
+                    <i class="fas fa-bars "></i>
+                    <i class="fas fa-window-close"></i>
+               </div>
+                <a href="index.html" class="logo">Parking</a>
+                <div class="fas fa-shopping-cart"></div>
                 <ul class="menuBox">
-                    <a href="index.html" class="dropdown">Home</a>
-                    <li class="dropdown dropdown-6 resDropdown" >Products
-                        <ul class="dropdown_menu dropdown_menu--animated dropdown_menu-6">
-                            <a href="exotics.html" class="list">Exotic Couch</a>
-                            <a href="Dinning.html" class="list">Exotic Dinning</a>
-                            <a href="royal.html" class="list">Royal Beds</a>
-                            <a href="living.html" class="list">Smart Living Room</a>
-                        </ul>
+                    <li class="dropdown">
+                        <a href="index.html">Home</a>
                     </li>
-                    <a href="about.html" class="dropdown">About</a>
-                    <a href="contact.html" class="dropdown">Contacts</a>
+                    <div class="dropdown" >
+                        <button class="drop">Products</button>
+                        <div class="dropdown_menu">
+                            <a href="exotics.html" class="list">
+                                    Exotic Couch
+                                </a>
+                            <a href="Dinning.html" class="list">
+                                    Exotic Dinning
+                                </a>
+                            <a href="royal.html" class="list">
+                                    Royal Beds
+                                </a>
+                            <a href="living.html" class="list">
+                                    Smart Living Room
+                                </a>
+                        </div>
+                    </div>
+                    <li class="dropdown">
+                        <a href="about.html" >
+                            About
+                        </a>
+                    </li>
+                    <li class="dropdown">
+                        <a href="contact.html">
+                            Contacts
+                        </a>
+                    </li>
                 </ul>
-            </div>
 
-            <div class="icon">
-                
-                <div class="fas fa-window-close fasBtn" id="close" ></div>
-                <div class="fas fa-shopping-trail fasBtn"></div>
-            </div>
-           
-            <div id="search-btn">
-                <input type="text" id="search-box" placeholder="search item here...">
-            </div>
+                <!-- SEARCH INPUT BAR -->
+                <div id="search-btn">
+                    <input type="text" id="search-box" placeholder="search item here...">
+                </div>
+            </nav>
         </header>
+
+        <!-- MAIN CONTENT OF THE PAGE -->
         <div class="rowOffIn">
             <div class="main"></div> 
         </div>
@@ -91,5 +110,6 @@
             </div>
             <div class="copyright">Copyright 2022, All right reserved</div>
         </footer>
+        <script src="tal.js"></script>
     </body>
 </html>
