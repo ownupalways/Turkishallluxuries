@@ -17,7 +17,14 @@
                     <i class="fas fa-window-close"></i>
                </div>
                 <a href="index.html" class="logo">Parking</a>
-                <div class="fas fa-shopping-cart"></div>
+
+                <div class="cart-container">
+                    <div class="icon-cart">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span>0</span>
+                    </div>
+                </div>
+                
                 <ul class="menuBox">
                     <li class="dropdown">
                         <a href="index.html">Home</a>
@@ -60,7 +67,19 @@
 
         <!-- MAIN CONTENT OF THE PAGE -->
         <div class="rowOffIn">
-            <div class="main"></div> 
+            <div class="mainContainer"></div> 
+        </div>
+        
+        <!-- CART CONTAINER PAGE -->
+        <div class="cart-window">
+            <h1>Shopping Cart</h1>
+            <div class="cartListItems">
+                
+            </div>
+            <div class="cartBtn">
+                <button class="cart-closeBtn">Close</button>
+                <button class="cartPaymentBtn">Pay Now</button>
+            </div>
         </div>
 
         <!--FOOTER CONTENTS -->
@@ -110,6 +129,7 @@
             </div>
             <div class="copyright">Copyright 2022, All right reserved</div>
         </footer>
-        <script src="tal.js"></script>
+        <!-- <script src="tal.js"></script> -->
+        <script src="shopping.js"></script>
     </body>
 </html>

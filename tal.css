@@ -101,11 +101,30 @@ nav .responsiveMenuBtn {
     line-height: 80px;
 }
 
-nav .fa-shopping-cart {
+/* CART FUNCTION DISPLAY */
+nav .cart-container {
     line-height: 50px; 
     position: absolute;
-    right: 8em;
-    top: 12px;
+    right: 28em;
+    top: 20px;
+}
+
+nav .icon-cart {
+    position: relative;
+}
+
+nav .icon-cart > span {
+    display: flex;
+    width: 20px;
+    height: 20px;
+    background-color: var(--onion);
+    justify-content: center;
+    align-items: center;
+    color: var(--white);
+    position: absolute;
+    border-radius: 50%;
+    top: 48%;
+    right: 0px;
 }
 
 /* MENU LIST ON LAPTOP SCREEN */
@@ -222,7 +241,25 @@ input[type=text]:focus {
     width: 380px;
 }
 
+/* CART WINDOW PAGE DESIGN */
 
+.cart-window {
+    width: 400px;
+    background-color: var(--background_page);
+    color: var(--white);
+    position: fixed;
+    inset: 80px 0 0 auto;
+    display: grid;
+    grid-template-rows: 70px 1fr 70px;
+}
+
+.cart-window h1 {
+    padding: 20px;
+    margin: 0;
+    font-weight:300;
+    color: var(--white);
+    text-transform: uppercase;
+}
 /******SCROLLING IMAGE ON HOME PAGE******/
 
 .Scroll-container {
