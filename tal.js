@@ -35,6 +35,7 @@ function ready() {
             scrollTabs.forEach(BundleScrollTab => {
                 let newContainer = document.createElement('div')
                 newContainer.classList.add('Scroll-container')
+                newContainer.dataset.id = product.id
                 if(BundleScrollTab.length > 0 ) {
                     for (let i = 0; i < BundleScrollTab.length; i++) {
                         const product = BundleScrollTab[i];
@@ -56,7 +57,7 @@ function ready() {
                         </div>
                         `
                         newContainer.append(newProduct)
-                        newProduct.querySelectorAll('.more_view')[0].addEventListener('click', showModalBox)
+                        // newProduct.querySelectorAll('.more_view')[0].addEventListener('click', showModalBox)
                     }
                 }
                 productContentHTML.append(newContainer)
@@ -91,8 +92,6 @@ function ready() {
     
 function showModalBox(event) {
 let viewButtonClicked = event.target
-
-console.log("clicked")
 
 let displayModalBox = document.createElement('div')
 displayModalBox.classList.add('modalBoxForEachImage')
