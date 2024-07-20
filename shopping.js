@@ -6,11 +6,11 @@ if(document.readyState == 'loading') {
 }
 
 function ready() {
-    let viewBtn = document.querySelectorAll('.more_view')
-    for (let i = 0; i < viewBtn.length; i++) {
-        const viewButton = viewBtn[i];
-        viewButton.addEventListener('click', showModalBox)
-    }
+    // let viewBtn = document.querySelectorAll('.more_view')
+    // for (let i = 0; i < viewBtn.length; i++) {
+    //     const viewButton = viewBtn[i];
+    //     viewButton.addEventListener('click', showModalBox)
+    // }
     
     // ITEMS CARDS WITH OVERFLOW SLIDE
     let productContentHTML = document.getElementsByClassName("mainContainer")[0]
@@ -31,6 +31,7 @@ function ready() {
            }
 
            changeQuantity(product_id, type)
+           addCartToHTML()
         }
     })
 
@@ -91,7 +92,7 @@ function ready() {
                             <p class="product_glance">${product.glance}</p>
                             <div class="more_action">
                                 <i class="fa-solid fa-eye" id="details" title="view more details"></i>
-                                <i class="fa-solid fa-hand-holding-dollar" id="purchase" title="make payment here"></i>
+                                <i class="fas fa-shopping-cart" id="purchase" title="make payment here"></i>
                             </div>
                         </div>
                     </div>
@@ -104,9 +105,10 @@ function ready() {
 
     productContentHTML.addEventListener('click', (event) => {
         let positionClicked = event.target;
-        if(positionClicked.classList.contains('fa-hand-holding-dollar')) {
+        if(positionClicked.classList.contains('fa-shopping-cart')) {
            let product_id = positionClicked.parentElement.parentElement.parentElement.parentElement.dataset.id
            addToCart(product_id)
+           addCartToHTML()
         }
     })
 
@@ -160,8 +162,17 @@ function ready() {
                         <span class="plus "></span>
                     </div>`;
                 cartListItems.appendChild(newCart)
+
+                if (totalQuantity > 0) {
+                    IconCartLabel.style.display = "flex"
+                    IconCartLabel.innerText = totalQuantity;
+                } else {
+                    IconCartLabel.style.display = "none"
+                     IconCartLabel.innerText = totalQuantity;
+                }
+               
             })
-            IconCartLabel.innerText = totalQuantity;
+           
         }
      }
 
@@ -170,14 +181,16 @@ function ready() {
 
 
 // SHOPPING CART DISPLAY/DISAPPEAR OPERATION
-let iconCart = document.querySelector('.fa-shopping-cart')
-let closeCart = document.querySelector('.cart-closeBtn')
-let body = document.querySelector('body')
+let iconCart = document.getElementsByClassName('fa-shopping-cart')[0]
+let closeCart = document.getElementsByClassName('cart-closeBtn')[0]
+let body = document.getElementsByTagName('body')[0]
 
 iconCart.addEventListener('click', () => {
     body.classList.toggle('showCart')
 })
 
-closeCart.addEventListener('click', () => {
+closeCart.addEventListener('click', closeCartBox)
+
+function closeCartBox() {
     body.classList.toggle('showCart')
-})
+}

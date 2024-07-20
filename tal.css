@@ -19,6 +19,7 @@
     --white:#fff;
     --AlphaWhite: rgba(255, 255, 255, 0.3);
     --onion: purple;
+    --onionTransparent: rgba(128, 0, 128, 0.5);
     --blue: rgb(33, 0, 221);
     --black: black;
     --box-shadow: 6px 2px 8px rgb(8, 4, 4);
@@ -74,6 +75,7 @@ nav .fas {
     align-items: center;
     border-radius: 4px;
     color: var(--mainColor);
+    cursor: pointer;
 }
 
 nav .fas:hover {
@@ -112,7 +114,7 @@ nav .icon-cart {
 }
 
 nav .icon-cart > span {
-    display: flex;
+    display: none;
     width: 20px;
     height: 20px;
     background-color: var(--onion);
@@ -123,6 +125,7 @@ nav .icon-cart > span {
     border-radius: 50%;
     top: 48%;
     right: 0px;
+    cursor: pointer;
 }
 
 /* MENU LIST ON LAPTOP SCREEN */
@@ -182,17 +185,20 @@ nav ul div .dropdown_menu {
     min-width: 180px;
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.3);
     background-color: var(--onion);
-    z-index: 1;
+    z-index: -1;
     overflow: hidden;
-    left: -800%;
+    left: -900%;
     transition: all 1s;
+    line-height: 45px;
+    z-index: -1111;
 }
 
 nav ul div .dropdown_menu a{
     display: block;
     padding: 2px 16px;
     color: var(--white);
-    font-size: 1.7em;
+    font-size: 1.65em;
+    border-bottom: 2px solid aliceblue;
 }
 
 nav ul div .dropdown_menu a:hover {
@@ -776,11 +782,13 @@ footer:hover {
     .card {
         max-width: 300px;
     }
+
+    footer {
+        bottom: -12%;
+    }
 } 
     /* FOOTER RESPONSIVENESS */
-    
-
-@media screen and (max-width:768px) {
+    @media screen and (max-width: 768px) {
 
     .mainContainer {
         grid-template-columns: repeat(2, 1fr);
@@ -790,4 +798,8 @@ footer:hover {
     .card {
         width: 300px;
     } 
+
+    footer {
+        bottom: 0;
+    }
 }
